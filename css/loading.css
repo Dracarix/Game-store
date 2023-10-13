@@ -1,0 +1,11 @@
+body{
+    background:linear-gradient(to bottom, #02a314 0%,#02ad16 20%,#02af17 50%, #03b617 100%) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 930px;
+}
+
+img{
+    width: 20%;
+}

@@ -1,0 +1,120 @@
+.join-form form,
+.primary-form form {
+  color: white;
+  border: 1px solid white;
+  border-radius: 5%;
+  padding: 50px 30px 20px 30px;
+  display: block;
+  background: #f1e5e5;
+}
+
+.join-form ,.form-control,
+.primary-form .form-control{
+  width: 300px;
+  height:45px;
+  box-shadow:rgb(0, 0, 0)0px 0px 0.3px 0px;
+}
+
+.join-form form h2,
+.primary-form form .h2{
+  font-size: 30px;
+
+}
+
+.join-form form div,
+.primary-form form div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.join-form,
+.primary-form{
+ 
+  width: 100%;
+  height: 770px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.join-form .btn-success,
+.primary-form .btn-success{
+  width: 200px;
+  height: 35px;
+  margin-left:50px ;
+  background-color: rgb(0, 231, 0);
+  box-shadow:rgb(0, 0, 0)0px 0px 5px 0px;
+}
+
+.login-form{
+  width:auto;
+  height: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form .login-btn{
+  padding: 30px 30px;
+  width: 260px;
+  text-decoration: none;
+  background-color: #006eff;
+  color: black;
+  border-radius: 15px;
+}
+
+.login-form .register-btn{
+  padding: 30px 30px;
+  background-color: #05b805;
+  text-decoration: none;
+  margin-left:20px ;
+  color: black;
+  border-radius: 15px;
+}
+
+.primary-form .registration h2{
+  color: #1d1d1d;
+}
+
+.primary-form .perehod,
+.join-form .perehod {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5px;
+    position: relative;
+    margin: 30px -5px -5px -5px ;
+}
+
+.primary-form .perehod a{
+  position: absolute;
+  bottom: 1;
+  right: 0;
+  color: #0064e7;
+  text-decoration:underline;
+}
+
+.primary-form .perehod a:hover,
+.join-form .perehod a:hover{
+  color: #000000;
+}
+
+
+.primary-form .perehod p,
+.join-form .perehod p{
+  color: #000000;
+  font-size: 14px;
+}
+
+.join-form .perehod a{
+  position: absolute;
+  bottom: 1;
+  right: 0;
+  color: #0064e7;
+  text-decoration:underline;
+  font-size: 15px;
+}
+

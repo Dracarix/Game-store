@@ -1,0 +1,18 @@
+body .completed{
+    background-image: url("/images/zelenaja-galochka.png");
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-size:contain; 
+    width: 1700px;
+    height: 930px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text-container{
+    font-size: 20px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}

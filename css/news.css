@@ -1,0 +1,67 @@
+.novosty .news-list{
+    display: block;
+}
+
+
+.novosty .news-list ul{
+    display: block;
+    font-size: 16px;
+    color: white;
+    line-height: 20px;
+    margin-bottom: 90px;
+}
+
+.novosty{
+    margin: 0 20% 0 20%;
+    box-sizing:border-box;
+    display: block;
+}
+
+.novosty .news-list ul li img{
+    width:200px;
+    height: 112.5px;
+}
+
+.novosty ul li .news-zagolovok a{
+    text-decoration: none;
+    text-transform: none;
+    color: #ffffff;
+}
+
+.novosty .news-list ul li .img-news{
+    position: relative;
+    width:200px;
+    height: 112.5px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin: 10px 30px 0 0;
+    box-shadow:rgb(0, 0, 0)0px 0px 5px 0px;
+}
+
+.novosty .news-list ul li{
+    list-style-position: outside;
+    list-style-type: none;
+    border-top: 1px solid #727882;
+    margin: 0 0 30px 0;
+}
+
+.novosty .news-list ul li .news1,
+.novosty .news-list ul li .news-opisanie{
+    color: #727882;
+}
+
+.novosty .news-list ul li .news2{
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.novosty .news-list ul li .li-block{
+    padding: 30px 0 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+  

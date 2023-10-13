@@ -1,0 +1,29 @@
+.img {
+    position: relative;
+    width: 300px; /* Задайте ширину контейнера */
+    height: 200px; /* Задайте высоту контейнера */
+    overflow: hidden;
+  }
+  
+  .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s;
+  }
+  
+  .img .hover-image {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .img:hover .initial-image {
+    opacity: 0;
+  }
+  
+  .img:hover .hover-image {
+    opacity: 1;
+  }
+  
