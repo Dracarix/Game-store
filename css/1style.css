@@ -128,7 +128,6 @@ header .logo img{
 /*left column category start*/
 .left_column{
     font-size: 20px;
-    background: linear-gradient(to left,#ffffff50,#2a475e40);
     display: flex;
     border-radius: 5%;
     width: 200px;
