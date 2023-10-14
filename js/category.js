@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	  perPage: 1,
 	  perMove: 1,
 	  type:'loop',
-	  gap: "30px",
 	  drag   : 'free',
 	  snap   : true,
 	  pagination: true,
@@ -21,5 +20,18 @@ document.addEventListener('DOMContentLoaded', function () {
 	  gap: "30px",
 	  pagination: true,
 	  autoplay: true,
+	}).mount();
+  });
+
+  document.addEventListener('DOMContentLoaded', function () {
+	new Splide('#second-product', {
+	  perPage: 4,
+	  perMove: 4,
+	  type      : 'slide',
+	  drag:false,
+	  isNavigation: false,
+	  snap   : false,
+	  gap: 10,
+	  pagination: true,
 	}).mount();
   });
