@@ -1,7 +1,5 @@
 body{
     background: #1B2838;
-    justify-content: center;
-    align-items: center;
     margin: 0;
     padding: 0;
     font-family:Arial;
@@ -52,11 +50,22 @@ background-color: #1B2838;
   color: #fff;
 }
 /* common style end */
+/* baner start */
+.baner{
+
+  margin: 0 0 48px 0;
+  padding: 0;
+  width: 100%;
+}
+.baner video{
+  width: 100%;
+}
+/* baner end */
 /* header start */
 header{
   display: flex;
   background: #171A21;
-  margin-bottom: 48px;
+  margin-bottom:4px;
   box-shadow: 0 1px 30px #000000;
   top: 0;
   position: relative;
@@ -122,6 +131,7 @@ header .top ul li a{
 }
 header .logo img{
   width: 100%;
+  transform: scale(1.9);
 }
 /* header end */
 
@@ -134,7 +144,7 @@ header .logo img{
     position: absolute;
     overflow: hidden;
     left: 30px;
-    top: 50%;
+    top: 70%;
     transform: translate(-50%, 100);
 }
 
@@ -172,111 +182,7 @@ header .logo img{
     opacity: 0.6;
 }
 /*left column category end*/
-/*grid start */
-.list-block{
-  width: 1150px;
 
-  margin-top: 5%;
-  display: grid;
-  padding: 40px 0 0 0;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5%;
-  position: relative;
-  margin:96px auto 96px auto ;
-}
-
-.game{
-  display: block;
-  border-radius: 5%;
-  background-color: green;
-  max-width: 200px;
-  min-width: 100px;
-  height: 280px;
-  border: 1.5px solid;
-  box-shadow: 2px 2px 100px #000;
-  overflow: hidden;
-}
-
-
-.game img{
-  width: 200px;
-  min-width: 100%;
-  height: auto;
-  aspect-ratio:3/3;
-  background-color: red;
-  border-bottom:1.5px solid;
-}
-
-.game .img-game{
-  background-color: 000;
-  width: auto;
-  height: 190px;
-  display:inline-flex;
-}
-
-/* .game:nth-of-type(4n+1) .info-game {
-  transform: translate(-103%, -1%);
-} */
-
-.game .info-game{
-  position: absolute;
-  animation: fadeIn 0.3s ease-in-out;
-  display: none;
-  transform: translate(69%, -1%);
-  background: #fff;
-  width: 300px;
-  background: rgba(0, 0, 0, 0.6);
-}
-
-.game .info-game p{
-  font-size: 15px;
-  margin:0 0 0 4px;
-  color: #fff;
-}
-
-
-.game .info-game img{
-  width: 300px;
-  aspect-ratio: auto;
-}
-
-.img-game:hover .info-game{
-  display: block;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-.game .block-name{
-  margin-top: -10px;
-}
-
-.game .name-game{
-  margin: 0 0 0 10px;
-  width: 200px;
-
-}
-
-.game .cena{
-  margin-top: -5px;
-  padding: 0 0 0 50%;
-}
-
-.eshe{
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.eshe a{
-  font-size: 20px;
-  text-decoration: underline;
-  color: red;
-}
-
-/*grid end */
 /*second splider start */
 .splide__wrapper{
   width: 1150px;
@@ -304,11 +210,11 @@ header .logo img{
 }
 
 .splide__progress__bar{
-  background-color: #000;
+  background-color: #fffdfd;
 }
 
 .splide__pagination__page ,.splide__pagination__page.is-active{
-  bottom: -1.5rem;
+  bottom: -2rem;
   opacity: .6;
   background-color: #e0dddd;
 }
@@ -321,6 +227,7 @@ header .logo img{
   border-radius: 3%;
   overflow: hidden;
   transition: all 0.1s ease;
+  
 }
 
 
@@ -328,16 +235,17 @@ header .logo img{
 
 
 #featured-product .category-name{
-  font-size: 24px;
+  font-size: 18px;
   left: 50%;
   transform: translate(-50%);
   position: absolute;
   top: 80%;
-
-  color:#f1f1f1;
-  opacity: 1;
-
-
+  
+  color:#ffffffde;
+}
+.name-this-block{
+  color: #Fff;
+  opacity: 0.8;
 }
 /* second slider end */
 /* first slider start */ 
@@ -346,6 +254,7 @@ header .logo img{
   position: relative;
   left: 50%;
   transform: translate(-50%);
+  margin-bottom: 96px;
 }
 
 
@@ -366,6 +275,7 @@ header .logo img{
   width: 760px;
 
 }
+
 
 .tab-button {
   padding: 10px 20px;
