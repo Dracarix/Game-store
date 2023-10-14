@@ -237,6 +237,7 @@ header .logo img{
 
 .game .info-game img{
   width: 300px;
+  aspect-ratio: auto;
 }
 
 .img-game:hover .info-game{
