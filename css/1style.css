@@ -127,7 +127,7 @@ header .logo img{
 
 /*left column category start*/
 .left_column{
-    font-size: 20px;
+    font-size: 15px;
     display: flex;
     border-radius: 5%;
     width: 200px;
@@ -147,7 +147,7 @@ header .logo img{
 
 .left_column ul li:first-child{
     text-decoration: wavy;
-    color: #1B2838;
+    color: #ffffff54;
     margin-bottom: 7px;
     opacity: .9;
 }
@@ -160,7 +160,7 @@ header .logo img{
 
 .left_column ul li a{
     text-decoration: none;
-    color: #1B2838;
+    color: #fcfcfcab;
     font-weight: bold;
     opacity: 1;
     transition: all 0.5s ease;
@@ -202,6 +202,7 @@ header .logo img{
   width: 200px;
   min-width: 100%;
   height: auto;
+  aspect-ratio:3/3;
   background-color: red;
   border-bottom:1.5px solid;
 }
