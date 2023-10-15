@@ -59,12 +59,18 @@ background-color: #1B2838;
 /* common style end */
 /* baner start */
 .baner{
-
+  
   margin: 0 0 48px 0;
   padding: 0;
-  width: 100%;
+  width: 1920px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  height:400px;
+  overflow: hidden;
 }
 .baner video{
+  object-fit: cover;
   width: 100%;
 }
 /* baner end */
