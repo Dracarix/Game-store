@@ -3,6 +3,13 @@ body{
     margin: 0;
     padding: 0;
     font-family:Arial;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+main{
+  height: 100%;
 }
 /* common style start */
 .overlay {
@@ -241,7 +248,8 @@ header .logo img{
   position: absolute;
   top: 80%;
   
-  color:#ffffffde;
+  color:#ffffff;
+  opacity: 0.8;
 }
 .name-this-block{
   color: #Fff;
@@ -250,7 +258,7 @@ header .logo img{
 /* third slider end */
 /* second slider start */
 .deshevie-igri{
-  width: 1100px;
+  width: 1150px;
   position: relative;
   left: 50%;
   transform: translate(-50%);
@@ -258,7 +266,15 @@ header .logo img{
 #second-product .splide__slide{
   height: 200px;
 }
-#second-product .splide__slide:hover .cena-dlya-deshevie-igri{
+
+#second-product h3{
+  color: #fff;
+  opacity: 0.8;
+  font-size: 18px;
+  font-weight: bold;
+}
+#second-product .splide__slide:hover .cena-dlya-deshevie-igri,
+#second-product .splide__slide:hover .d0-600-rub .zaebalsya-classi-pridumivat img{
   opacity: 1;
 }
 
@@ -271,7 +287,9 @@ header .logo img{
 }
 .d0-600-rub .zaebalsya-classi-pridumivat img{
   width: 100%;
+  opacity: 0.7;
   aspect-ratio: 16/9;
+  transition: opacity 0.2s ease;
 }
 
 #second-product .cena-dlya-deshevie-igri{
@@ -293,12 +311,15 @@ header .logo img{
   background: #084464;
   font-size: 12px;
   padding: 5px 10px;
+  background:linea;
 }
+
+
 
 /* second slider end */
 /* first slider start */ 
 #new-product {
-  width: 1000px;
+  width: 1150px;
   position: relative;
   left: 50%;
   transform: translate(-50%);
@@ -507,7 +528,7 @@ header .logo img{
 .img-content-info {
   display: flex;
   flex-direction: column;
-  opacity: 0.4;
+  opacity: 0.7;
   transition: all 1s;
   gap: 5px;
 }
@@ -554,7 +575,7 @@ header .logo img{
   right: 0;
   background:linear-gradient(to right,#95BCD3, #859BAC);
   height: 761px ;
-  transition: all .5s;
+  transition: all .3s;
 
 }
 
@@ -579,3 +600,61 @@ header .logo img{
 }
 
 /* games-content end */
+/* footer start */
+footer{
+  background: linear-gradient(to bottom, #294969, #2e5780);
+  border: 1.5px solid;
+  font-size: 17px;
+  position: relative;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+
+
+footer .contact{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  margin-left: 15px;
+}
+
+
+footer .reglament{ 
+  display :flex;
+  justify-content:center ;
+  align-items: center;
+}
+
+footer p{
+  color: #c6c9cf;
+}
+
+footer .contact p:nth-child(2){
+  margin-right: 55px;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.popup-toggle:checked ~ .popup {
+  display: block;
+}
+
+header .avatar{
+  width: 35px;
+  height: auto;
+}
+
+.avatar img {
+  width: 50%;
+  height: auto;
+}
+
+/* footer end */

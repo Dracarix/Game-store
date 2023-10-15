@@ -88,3 +88,5 @@ spliders.forEach(item => {
             imgBox.style.transform = 'scale(1)';
     });
 });
+
+
