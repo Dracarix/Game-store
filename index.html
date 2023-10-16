@@ -10,7 +10,7 @@
     <title>Lebedkov.com</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" href="css/1style.css">
-    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/media.css">
 
 </head>
 <body>
@@ -35,20 +35,29 @@
     </div>
   </header>
     <main>
-         <div class="left_column" >
+              <div class="left_column" >
                 <ul>
                     <li>Категории</li>
                     <li><a href="#">Бесплатные</a></li>
                     <li><a href="#">Новинки</a></li>
                     <li><a href="#">Скоро выйдут</a></li>
                 </ul>
-            </div>
+              </div>
             <div class="baner">
-              <video autoplay loop muted preload="auto">
+              <video  autoplay loop muted preload="auto">
                   <source src="images/banner.webm" type="video/webm">
                   Ваш браузер не поддерживает видео в формате webm.
               </video>
+            
             </div>
+            <div class="baner-media">
+              <video autoplay loop muted preload="auto">
+                  <source src="images/baner-media.webm" type="video/webm">
+                  Ваш браузер не поддерживает видео в формате webm.
+              </video>
+              
+            </div>
+            
         <section id="new-product" class="splide" >
           
           <div class="splide__track">
@@ -152,8 +161,9 @@
         </section>
 
           <section id="1splide__wrapper" class="splide__wrapper">
-            <h3 class="name-this-block">КАТЕГОРИИ</h3>
+            
             <div id="featured-product" class="splide">
+              <h3 class="name-this-block">КАТЕГОРИИ</h3>
               <div class="splide__track">
                 <div class="splide__list">
                   <a href="#" class="splide__slide">
@@ -904,6 +914,444 @@
               <div class="info-content">
               </div>
             </div>
+
+          </div>
+          <div class="games-content-media">
+            <div class="tab-container-media">
+              <button class="tab-button-media active" onclick="openTabmedia('tab-media1')">Рекомендации</button>
+              <button class="tab-button-media" onclick="openTabmedia('tab-media2')">Новинки</button> 
+            </div>
+            <ul class="tab-content-media" id="tab-media1">
+              <!-- cs -->
+              <li class="list-games-media">
+                <a class="game-links" href="shop-link/scsgo.html">
+                  <div class="img-conteiner">
+                    <img src="images/20 na 9/cs.jpg" alt="CS GO">
+                  </div>
+                  <div class="content-item">
+                      <div class="name-content">
+                          <h3>Counter-Strike: Global Offensive</h3>
+                      </div>
+                      <div class="platforms">
+                          <span class="platform-img windows"><img src="images/windows.png" alt=""></span>
+                          <span class="platform-img macOS"><img src="images/mac os.png" alt=""></span>
+                          <span class="platform-img linux"><img src="images/linux.png" alt=""></span>
+                      </div>
+                      <div class="teg-category">
+                        <p>Шутер</p>
+                        <p>Экшен</p>
+                        <p>Для нескольких игроков</p>
+                      </div>
+                  </div>
+                  <div class="price-content">
+                    <p>бесплатно</p>
+                  </div>
+                </a>
+              </li>
+              <!-- dota2 -->
+              <li class="list-games-media">
+                  <a class="game-links" href="#">
+                    <div class="img-conteiner">
+                      <img src="images/20 na 9/dota2.jpg" alt="Dota 2">
+                    </div>
+                    <div class="content-item">
+                        <div class="name-content">
+                            <h3>Dota 2</h3>
+                        </div>
+                        <div class="platforms">
+                            <span class="platform-img windows"><img src="images/windows.png" alt=""></span>
+                            <span class="platform-img macOS"><img src="images/mac os.png" alt=""></span>
+                            <span class="platform-img linux"><img src="images/linux.png" alt=""></span>
+                        </div>
+                        <div class="teg-category">
+                          <p>Шутер</p>
+                          <p>Экшен</p>
+                          <p>Для нескольких игроков</p>
+                        </div>
+                    </div>
+                    <div class="price-content">
+                      <p>бесплатно</p>
+                    </div>
+                  </a>
+                </li>
+                <!-- WH space marine 2 -->
+                <li class="list-games-media">
+                  <a class="game-links" href="#">
+                    <div class="img-conteiner">
+                      <img src="images/20 na 9/warhammer space marine 2.jpg" alt="warhammer space marine 2">
+                    </div>
+                    <div class="content-item">
+                        <div class="name-content">
+                            <h3>Warhammer Space Marine 2</h3>
+                        </div>
+                        <div class="platforms">
+                            <span class="platform-img windows"><img src="images/windows.png" alt=""></span>
+                            <span class="platform-img macOS"><img src="images/mac os.png" alt=""></span>
+                            <span class="platform-img linux none"><img src="images/linux.png" alt=""></span>
+                        </div>
+                        <div class="teg-category">
+                          <p>Шутер</p>
+                          <p>Экшен</p>
+                          <p>Для нескольких игроков</p>
+                        </div>
+                    </div>
+                    <div class="price-content">
+                      <p>анонсирован</p>
+                    </div>
+                  </a>
+                </li>
+                <!-- terraria -->
+                <li class="list-games-media">
+                  <a class="game-links" href="#">
+                    <div class="img-conteiner">
+                      <img src="images/20 na 9/terraria.jpg" alt="terraria">
+                    </div>
+                    <div class="content-item">
+                        <div class="name-content">
+                            <h3>Terraria</h3>
+                        </div>
+                        <div class="platforms">
+                            <span class="platform-img windows"><img src="images/windows.png" alt=""></span>
+                            <span class="platform-img macOS"><img src="images/mac os.png" alt=""></span>
+                            <span class="platform-img linux"><img src="images/linux.png" alt=""></span>
+                        </div>
+                        <div class="teg-category">
+                          <p>Песочница</p>
+                          <p>Инди</p>
+                          <p>Для нескольких игроков</p>
+                        </div>
+                    </div>
+                    <div class="price-content">
+                      <p>300 <span>руб</span> </p>
+                      
+                    </div>
+                  </a>
+                </li>
+                <!-- stray -->
+                <li class="list-games-media">
+                  <a class="game-links" href="#">
+                    <div class="img-conteiner">
+                      <img src="images/20 na 9/Stray.jpg" alt="Stray">
+                    </div>
+                    <div class="content-item">
+                        <div class="name-content">
+                            <h3 >Stray</h3>
+                        </div>
+                        <div class="platforms">
+                            <span class="platform-img windows"><img src="images/windows.png" alt=""></span>
+                            <span class="platform-img macOS none"><img src="images/mac os.png" alt=""></span>
+                            <span class="platform-img linux none"><img src="images/linux.png" alt=""></span>
+                        </div>
+                        <div class="teg-category">
+                          <p>Приключения</p>
+                          <p>Экшен</p>
+                          <p>Для одного игрока</p>
+                        </div>
+                    </div>
+                    <div class="price-content">
+                      <p>930 <span>руб</span> </p>
+                      
+                    </div>
+                  </a>
+                </li>
+                <!-- Escape the Backrooms -->
+                <li class="list-games-media">
+                  <a class="game-links" href="#">
+                    <div class="img-conteiner">
+                      <img src="images/20 na 9/EscapetheBackrooms.jpg" alt="Escape the Backrooms">
+                    </div>
+                    <div class="content-item">
+                        <div class="name-content">
+                            <h3 >Escape the Backrooms</h3>
+                        </div>
+                        <div class="platforms">
+                            <span class="platform-img windows"><img src="images/windows.png" alt=""></span>
+                            <span class="platform-img macOS none"><img src="images/mac os.png" alt=""></span>
+                            <span class="platform-img linux none"><img src="images/linux.png" alt=""></span>
+                        </div>
+                        <div class="teg-category">
+                          <p>Хоррор</p>
+                          <p>Для нескольких игроков</p>
+                          <p>Приключения</p>
+                        </div>
+                    </div>
+                    <div class="price-content">
+                      <p>259 <span>руб</span> </p>
+                      
+                    </div>
+                  </a>
+                </li>
+                <!-- Demonologist -->
+                <li class="list-games-media">
+                  <a class="game-links" href="#">
+                    <div class="img-conteiner">
+                      <img src="images/20 na 9/Demonologist.jpg" alt="Demonologist">
+                    </div>
+                    <div class="content-item">
+                        <div class="name-content">
+                            <h3>Demonologist</h3>
+                        </div>
+                        <div class="platforms">
+                            <span class="platform-img windows"><img src="images/windows.png" alt=""></span>
+                            <span class="platform-img macOS none"><img src="images/mac os.png" alt=""></span>
+                            <span class="platform-img linux none"><img src="images/linux.png" alt=""></span>
+                        </div>
+                        <div class="teg-category">
+                          <p>Приключения</p>
+                          <p>Экшен</p>
+                          <p>Для одного игрока</p>
+                        </div>
+                    </div>
+                    <div class="price-content">
+                      <p>600 <span>руб</span> </p>
+                      
+                    </div>
+                  </a>
+                </li>
+                <!-- COCOON -->
+                <li class="list-games-media">
+                  <a class="game-links" href="#">
+                    <div class="img-conteiner">
+                      <img src="images/20 na 9/COCOON.jpg" alt="COCOON">
+                    </div>
+                    <div class="content-item">
+                        <div class="name-content">
+                            <h3>COCOON</h3>
+                        </div>
+                        <div class="platforms">
+                            <span class="platform-img windows"><img src="images/windows.png" alt=""></span>
+                            <span class="platform-img macOS none"><img src="images/mac os.png" alt=""></span>
+                            <span class="platform-img linux none"><img src="images/linux.png" alt=""></span>
+                        </div>
+                        <div class="teg-category">
+                          <p>Инди</p>
+                          <p>Приключения</p>
+                          <p>Головоломка</p>
+                        </div>
+                    </div>
+                    <div class="price-content">
+                      <p>950 <span>руб</span> </p>
+                      
+                    </div>
+                  </a>
+                </li>
+            </ul>
+
+            <ul class="tab-content-media" id="tab-media2">
+              <!-- Team Fortress 2 -->
+              <li class="list-games-media">
+                <a class="game-links" href="#">
+                  <div class="img-conteiner">
+                    <img src="images/20 na 9/Team Fortress 2.jpg" alt="Team Fortress 2">
+                  </div>
+                  <div class="content-item">
+                      <div class="name-content">
+                          <h3>Team Fortress 2</h3>
+                      </div>
+                      <div class="platforms">
+                          <span class="platform-img windows"><img src="images/windows.png" alt=""></span>
+                          <span class="platform-img macOS none"><img src="images/mac os.png" alt=""></span>
+                          <span class="platform-img linux none"><img src="images/linux.png" alt=""></span>
+                      </div>
+                      <div class="teg-category">
+                        <p>Шутер</p>
+                        <p>Экшен</p>
+                        <p>Для нескольких игроков</p>
+                      </div>
+                  </div>
+                  <div class="price-content">
+                    <p>бесплатно</p>
+                  </div>
+                </a>
+              </li>
+              <!-- Noch -->
+              <li class="list-games-media">
+                  <a class="game-links" href="#">
+                    <div class="img-conteiner">
+                      <img src="images/20 na 9/Noch.jpg" alt="">
+                    </div>
+                    <div class="content-item">
+                        <div class="name-content">
+                            <h3>Noch</h3>
+                        </div>
+                        <div class="platforms">
+                            <span class="platform-img windows"><img src="images/windows.png" alt=""></span>
+                            <span class="platform-img macOS none"><img src="images/mac os.png" alt=""></span>
+                            <span class="platform-img linux none"><img src="images/linux.png" alt=""></span>
+                        </div>
+                        <div class="teg-category">
+                          <p>Хоррор</p>
+                          <p>Экшен</p>
+                          <p>Приключения</p>
+                        </div>
+                    </div>
+                    <div class="price-content">
+                      <p>346 руб</p>
+                    </div>
+                  </a>
+                </li>
+                <!-- Wargroove 2 -->
+                <li class="list-games-media">
+                  <a class="game-links" href="#">
+                    <div class="img-conteiner">
+                      <img src="images/20 na 9/Wargroove 2.jpg" alt="">
+                    </div>
+                    <div class="content-item">
+                        <div class="name-content">
+                            <h3>Wargroove 2</h3>
+                        </div>
+                        <div class="platforms">
+                            <span class="platform-img windows"><img src="images/windows.png" alt=""></span>
+                            <span class="platform-img macOS none"><img src="images/mac os.png" alt=""></span>
+                            <span class="platform-img linux none"><img src="images/linux.png" alt=""></span>
+                        </div>
+                        <div class="teg-category">
+                          <p>Стратегия</p>
+                          <p>Для одного игрока</p>
+                          <p>Кооператив</p>
+                        </div>
+                    </div>
+                    <div class="price-content">
+                      <p>568 руб</p>
+                    </div>
+                  </a>
+                </li>
+                <!-- TAGLINE -->
+                <li class="list-games-media">
+                  <a class="game-links" href="#">
+                    <div class="img-conteiner">
+                      <img src="images/20 na 9/TAGLINE.jpg" alt="">
+                    </div>
+                    <div class="content-item">
+                        <div class="name-content">
+                            <h3>TAGLINE</h3>
+                        </div>
+                        <div class="platforms">
+                            <span class="platform-img windows"><img src="images/windows.png" alt=""></span>
+                            <span class="platform-img macOS none"><img src="images/mac os.png" alt=""></span>
+                            <span class="platform-img linux none"><img src="images/linux.png" alt=""></span>
+                        </div>
+                        <div class="teg-category">
+                          <p>Экшен</p>
+                          <p>Приключения</p>
+                          <p>Шутер</p>
+                        </div>
+                    </div>
+                    <div class="price-content">
+                      <p>650 <span>руб</span> </p>
+                      
+                    </div>
+                  </a>
+                </li>
+                <!-- Thief Simulator 2 -->
+                <li class="list-games-media">
+                  <a class="game-links" href="#">
+                    <div class="img-conteiner">
+                      <img src="images/20 na 9/TS2.jpg" alt="Thief Simulator 2">
+                    </div>
+                    <div class="content-item">
+                        <div class="name-content">
+                            <h3 >Thief Simulator 2</h3>
+                        </div>
+                        <div class="platforms">
+                            <span class="platform-img windows"><img src="images/windows.png" alt=""></span>
+                            <span class="platform-img macOS none"><img src="images/mac os.png" alt=""></span>
+                            <span class="platform-img linux none"><img src="images/linux.png" alt=""></span>
+                        </div>
+                        <div class="teg-category">
+                          <p>Симулятор</p>
+                          <p>Экшен</p>
+                          <p>Инди</p>
+                        </div>
+                    </div>
+                    <div class="price-content">
+                      <p>639<span>руб</span> </p>
+                      
+                    </div>
+                  </a>
+                </li>
+                <!-- Warhammer 40,000: Inquisitor -->
+                <li class="list-games-media">
+                  <a class="game-links" href="#">
+                    <div class="img-conteiner">
+                      <img src="images/20 na 9/WH Inquisitor.jpg" alt="WH Inquisitor">
+                    </div>
+                    <div class="content-item">
+                        <div class="name-content">
+                            <h3 >Warhammer 40,000: Inquisitor</h3>
+                        </div>
+                        <div class="platforms">
+                            <span class="platform-img windows"><img src="images/windows.png" alt=""></span>
+                            <span class="platform-img macOS none"><img src="images/mac os.png" alt=""></span>
+                            <span class="platform-img linux none"><img src="images/linux.png" alt=""></span>
+                        </div>
+                        <div class="teg-category">
+                          <p>Экшен</p>
+                          <p>Кооператив</p>
+                          <p>Для одного игрока</p>
+                        </div>
+                    </div>
+                    <div class="price-content">
+                      <p>1600 <span>руб</span></p>
+                      
+                    </div>
+                  </a>
+                </li>
+                <!-- Smalland: Survive the Wilds -->
+                <li class="list-games-media">
+                  <a class="game-links" href="#">
+                    <div class="img-conteiner">
+                      <img src="images/20 na 9/Smalland.jpg" alt="Smalland">
+                    </div>
+                    <div class="content-item">
+                        <div class="name-content">
+                            <h3>Smalland: Survive the Wilds</h3>
+                        </div>
+                        <div class="platforms">
+                            <span class="platform-img windows"><img src="images/windows.png" alt=""></span>
+                            <span class="platform-img macOS none"><img src="images/mac os.png" alt=""></span>
+                            <span class="platform-img linux none"><img src="images/linux.png" alt=""></span>
+                        </div>
+                        <div class="teg-category">
+                          <p>Приключения</p>
+                          <p>Кооператив</p>
+                          <p>Для одного игрока</p>
+                        </div>
+                    </div>
+                    <div class="price-content">
+                      <p>1100 <span>руб</span> </p>
+                      
+                    </div>
+                  </a>
+                </li>
+                <!-- Tiny Bunny -->
+                <li class="list-games-media">
+                  <a class="game-links" href="#">
+                    <div class="img-conteiner">
+                      <img src="images/20 na 9/Tiny Bunny.jpg" alt="Tiny Bunny">
+                    </div>
+                    <div class="content-item">
+                        <div class="name-content">
+                            <h3>Tiny Bunny</h3>
+                        </div>
+                        <div class="platforms">
+                            <span class="platform-img windows"><img src="images/windows.png" alt=""></span>
+                            <span class="platform-img macOS none"><img src="images/mac os.png" alt=""></span>
+                            <span class="platform-img linux none"><img src="images/linux.png" alt=""></span>
+                        </div>
+                        <div class="teg-category">
+                          <p>Приключения</p>
+                          <p>Для одного игрока</p>
+                          <p>Хоррор</p>
+                        </div>
+                    </div>
+                    <div class="price-content">
+                      <p>349 <span>руб</span> </p>
+                      
+                    </div>
+                  </a>
+                </li>
+            </ul>
 
           </div>
 

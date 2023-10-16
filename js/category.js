@@ -17,9 +17,20 @@ document.addEventListener('DOMContentLoaded', function () {
 	  perMove: 1,
 	  type:'loop',
 	  snap   : true,
-	  gap: "30px",
+	  gap: "10px",
 	  pagination: true,
 	  autoplay: true,
+	  breakpoints: {
+		1050: {
+			perPage: 3,
+		},
+		715: {
+			perPage: 2,
+		},
+		480: {
+			perPage: 1,
+		},
+	  }
 	}).mount();
   });
 
@@ -33,5 +44,16 @@ document.addEventListener('DOMContentLoaded', function () {
 	  snap   : false,
 	  gap: 10,
 	  pagination: true,
+	  breakpoints: {
+		1050: {
+			perPage: 3,
+		},
+		715: {
+			perPage: 2,
+		},
+		480: {
+			perPage: 1,
+		},
+  }
 	}).mount();
   });

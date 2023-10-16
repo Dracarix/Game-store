@@ -1,0 +1,230 @@
+/* 1528 */
+
+
+@media (max-width: 1528px) {
+    .left_column{
+        transform: translate(-60px);
+        animation: left_column-1528 0.4s ease;
+        opacity: 0.8;
+    }
+}
+
+@keyframes left_column-1528 {
+    0%{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translate(-60px);
+    }
+}
+@media (max-width: 1428px) {
+    .uletel{
+        opacity: 0;
+        position: absolute;
+        animation: uletell 0.8s ease;
+        display: none;
+    }
+
+}
+
+@keyframes uletell {
+    0%{
+        transform: translate(0, 0);
+        opacity: 0.8;
+        display: block;
+    }
+    100%{
+        transform: translate(-200%);
+        opacity: 0;
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    #new-product{
+        width: 90%;
+    }
+
+    #new-product img{
+        object-fit: contain;
+    }
+    #second-product{
+        width: 90%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        
+    }
+    #featured-product{
+        width: 90%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+
+}
+
+@media (max-width: 1170px){
+    .games-content{
+        display: none;
+    }
+    .games-content-media{
+        display: flex;
+    }
+    #tab-media1{
+        display: block;
+    }
+}
+
+@media (max-width: 1050px){
+    /* #second-product{
+        width: 80%;
+
+        
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    #featured-product{
+        width: 80%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    } */
+}
+
+
+
+@media (max-width: 950px){
+    /* #second-product{
+        width: 70%;
+    }
+    #featured-product{
+        width: 70%;
+        
+    } */
+}
+@media (max-width: 924px){
+    .baner{
+        display: none;
+    }
+    .baner-media{
+        display: block;
+    }
+
+}
+@media (max-width: 830px){
+    /* #second-product{
+        width: 60%;
+    }
+    #new-product{
+        margin-bottom: 48px;
+    }
+    #featured-product{
+        width: 60%;
+        
+    }
+    #second-product .cena-dlya-deshevie-igri{
+        background: #407b9a;
+        opacity: 0.9;
+        margin:25px 0 0 0 ;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        
+    } */
+}
+
+@media (max-width: 715px){
+    /* #second-product{
+        width: 50%;
+        
+    }
+    #featured-product{
+        width: 50%;
+        
+    }
+    #second-product .cena-dlya-deshevie-igri{
+        background: #407b9a;
+        opacity: 0.9;
+        margin:50px 0 0 0 ;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        
+    } */
+}
+@media (max-width: 600px){
+    /* #second-product{
+        width: 40%;
+        
+    }
+    .splide__wrapper{
+        margin: 10px 0 0 0;
+    }
+    #second-product .cena-dlya-deshevie-igri{
+        background: #407b9a;
+        opacity: 0.9;
+        margin:25px 0 0 0 ;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        
+    }
+    #featured-product{
+        width: 40%;
+        
+    } */
+    .img-conteiner img{
+        aspect-ratio: 16/8;
+
+    }
+
+}
+@media (max-width: 480px){
+    /* #second-product{
+        width: 30%;
+        
+        
+    }
+    #second-product .cena-dlya-deshevie-igri{
+        background: #407b9a;
+        opacity: 0.9;
+        margin:60px 0 0 0 ;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        
+    }
+    #featured-product{
+        width: 30%;
+        
+    } */
+
+    .list-games-media{
+        max-height:15vw ;
+        min-height: 60px;
+    }
+    .img-conteiner img{
+        aspect-ratio: 15/8;
+        
+        
+    }
+}
+@media (max-width: 430px){
+    .platforms{
+        display: none;
+    }
+}
+@media (max-width: 340px){
+    .img-conteiner img{
+        margin-top: 10px;
+        
+        
+    }
+}
+@media (max-width: 1000px){}
+@media (max-width: 1000px){}

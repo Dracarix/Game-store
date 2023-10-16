@@ -2,19 +2,20 @@ const listItems = document.querySelectorAll('.list-games');
 const infoBox = document.querySelector('.info-box');
 const infoContent = document.querySelector('.info-content');
 document.getElementById('tab1').style.display = 'block';
+const mediaLeftColumn = window.matchMedia("(min-width:1550px)");
+const mediaListitem = window.matchMedia("(min-width:1160px)");
+const leftColumn = document.querySelector('.left_column');
 let currentInfo = null;
 let lastHoveredItem = null;
-
 listItems.forEach((item) => {
-
     item.addEventListener('mouseenter', () => {
         const info = item.getAttribute('data-info');
         const gradient = 'linear-gradient(to right,#95BCD3, #859BAC)';
         infoContent.innerHTML = info;
         currentInfo = info;
-        setTimeout(()=> {
+        setTimeout(() => {
             item.style.background = gradient;
-        },10)
+        }, 10);
 
         listItems.forEach((otherItem) => {
             otherItem.classList.remove('active');
@@ -31,12 +32,16 @@ listItems.forEach((item) => {
         });
 
         lastHoveredItem = item;
-    });
+        
 
-    item.addEventListener('mouseout', () => {
+        
 
+        item.addEventListener('mouseout', () => {
+                
+        });
     });
-});
+            
+    });
 
 window.addEventListener('load', () => {
     if (listItems.length > 0) {
@@ -44,6 +49,8 @@ window.addEventListener('load', () => {
         firstItem.dispatchEvent(new Event('mouseenter'));
     }
 });
+    
+
 // открытие таба по кнопкам
 function openTab(tabId) {
     // Скрыть все вкладки
@@ -61,6 +68,32 @@ btnTab.forEach(function(elem){
         const activeTab = document.querySelector('.tab-button.active');
         if (activeTab) {
             activeTab.classList.remove('active');
+        }
+
+        
+        requestAnimationFrame(() => {
+            elem.classList.add('active');
+            
+        });
+    })
+});
+
+
+function openTabmedia(tabId) {
+    // Скрыть все вкладки
+    const tabsMedia = document.querySelectorAll('.tab-content-media');
+    tabsMedia.forEach(function(tab) {
+        tab.style.display = 'none';
+    });
+    // Отобразить выбранную вкладку
+    document.getElementById(tabId).style.display = 'block';  
+};
+const btnTabmedia = document.querySelectorAll('.tab-button-media');
+btnTabmedia.forEach(function(elem){
+    elem.addEventListener('click',()=>{
+        const activeTabmedia = document.querySelector('.tab-button-media.active');
+        if (activeTabmedia) {
+            activeTabmedia.classList.remove('active');
         }
 
         
@@ -89,4 +122,18 @@ spliders.forEach(item => {
     });
 });
 
+
+
+function handleMediaLeftColumn(event) {
+  if (event.matches) {
+    
+    leftColumn.classList.remove('uletel')
+  } else {
+    leftColumn.classList.add('uletel')
+  }
+}
+
+mediaLeftColumn.addListener(handleMediaLeftColumn); 
+
+handleMediaLeftColumn(mediaLeftColumn);
 
