@@ -8,6 +8,7 @@
      <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" />
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="path-to-the-css/splide-extension-video.min.css">
 <style>
      body::before {
         content: "";
@@ -23,7 +24,6 @@
         z-index: -1;
     }
  </style>
-     <link rel="stylesheet" type="text/css" href="../css/style.css">
      <link rel="stylesheet" type="text/css" href="../css/1style.css">
      <link rel="stylesheet" type="text/css" href="../css/shop-list.css">
      <link rel="stylesheet" type="text/css" href="../css/login.css">
@@ -31,26 +31,57 @@
 
 </head>
 <body >
-    <header>
-        <div class="top">
-            <div class="logo">
-                <a href="../index.html" >
-                    <img src="../images/logotip.png" alt="Логотип"/>
-                </a>
-                <a class="nazvanie"href="index.html">LEBEDKOV.COM</a>
-                
-            </div>
-            <nav >
-                <ul>
-                    <li><a href="../index.html">Магазин</a></li>
-                    <li><a href="#">Новости</a></li>
-                </ul>
-            </nav>
-            <div class="login">
-              <a href="">Войти / Зарегистрироваться </a>
-            </div>
+    <input type="checkbox"  id="menu_toggle">
+    <label for="menu_toggle" id="checkboxed"> &#9776;</label>
+<header id="header" >
+
+    <div class="logo">
+        <a href="index.html" >
+            <img src="../images/logotip.png" alt="Логотип"/>
+        </a>
+        <a class="nazvanie"href="index.html">LEBEDKOV.COM</a>
+        
+    </div>
+    
+    <nav >
+      
+        <ul>
+            <li><a href="index.html">Магазин</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Войти / Зарегистрироваться </a></li>
+        </ul>
+    
+        
+      </nav>
+      <div class="media-footer">
+        
+        <div class="reglament">
+            <p>
+                © 2023 Lebedkov. Все права защищены.НДС включён во все цены, где он применим.
+            </p>
         </div>
-    </header>  
+        <div class="contact">
+            <span class="contacts">
+              Phone: +79962209041 
+              
+            </span><br>
+            <span class="contacts">
+              Email: lebedkov200002@gmail.com
+              
+            </span>
+            
+        </div>
+      </div>
+
+</header>
+<div class="header-checkbox">
+<div class="logo">
+  <a href="index.html" >
+      <img src="images/logotip.png" alt="Логотип"/>
+  </a>
+  
+</div>
+</div>
     <div class="path_game">
         <a href="">Все игры</a>
         <p>></p>
@@ -84,6 +115,12 @@
                                 >
                                 <div class="splide__track">
                                         <div class="splide__list">
+                                            <div class="splide__slide data-splide-html-video="../images/GAMES/CSGO/cs-video.webm"></div> ">
+                                                <img src="../images/GAMES/CSGO/CSGO14.jpg" alt="">
+                                            </div>
+                                            <div class="splide__slide ">
+                                                <video src="../images/GAMES/CSGO/cs-video2.webm"></video>
+                                            </div>
                                             <div class="splide__slide ">
                                                 <img src="../images/GAMES/CSGO/CSGO1.jpg" alt="">
                                             </div>
@@ -126,6 +163,12 @@
                                             <div class="splide__slide">
                                                 <img src="../images/GAMES/CSGO/CSGO14.jpg" alt="">
                                             </div>
+                                            <div class="splide__slide ">
+                                                <video src="../images/GAMES/CSGO/cs-video3.webm"></video>
+                                            </div>
+                                            <div class="splide__slide ">
+                                                <video src="../images/GAMES/CSGO/cs-video4.webm"></video>
+                                            </div>
                                             
                                         </div>
                                         
@@ -142,6 +185,9 @@
                                     >
                               <div class="splide__track">
                                     <div class="splide__list">
+                                        <div class="splide__slide data-splide-html-video="../images/GAMES/CSGO/cs-video.webm"></div> ">
+                                            <img src="../images/GAMES/CSGO/CSGO14.jpg" alt="">
+                                        </div>
                                         <div class="splide__slide">
                                             <img src="../images/GAMES/CSGO/CSGO1.jpg" alt="">
                                         </div>
@@ -279,19 +325,29 @@
         </main>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="path-to-the-script/splide-extension-video.min.js"></script>
     <script src="../js/slide.js"></script> 
-    <!-- <footer>
+    <footer>
         <div class="reglament">
             <p>
                 © 2023 Lebedkov. Все права защищены.НДС включён во все цены, где он применим.
             </p>
         </div>
         <div class="contact">
-            <p>Tel:</p>
-            <p>+78005553535</p>
-            <p>Email:</p>
-            <p>lebedkov20022002@gmail.com</p>
+            <span class="contacts">
+              Phone: +79962209041
+              <div class="real-contact">
+                Это реальный мой номер телефона
+              </div>
+            </span>
+            <span class="contacts">
+              Email: lebedkov200002@gmail.com
+              <div class="real-contact">
+                Это реальная моя электронная почта
+              </div>
+            </span>
+  
         </div>
-    </footer> -->
+      </footer>
 </body>
 </html>

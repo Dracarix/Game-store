@@ -30,8 +30,8 @@
 		} );
 	
 		glavnaya.sync(mini);
-		glavnaya.mount();
-		mini.mount();
+		glavnaya.mount( window.splide.Extensions );
+		mini.mount( window.splide.Extensions );
 
 		const closeModalButton = document.getElementById("closeModalButton");
 		const modal = document.getElementById("myModal");
