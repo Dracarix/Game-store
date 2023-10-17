@@ -15,6 +15,11 @@ main{
   width: 100%;
 }
 /* common style start */
+nav input[type="checkbox"],
+nav label{
+  color: #fff;
+  display: none;
+}
 .overlay {
   display: none;
   position: fixed;
@@ -629,9 +634,9 @@ header .logo img{
 /* games-content end */
 /* games-content-media start */
 .tab-container-media {
-
+  width: 300px;
   position: relative;
-  left: 85%;
+  left: 50%;
   margin: 10px 0 0 0;
   transform: translate(-50%);
 
@@ -666,6 +671,7 @@ header .logo img{
 
 .tab-content-media {
   display: none;
+  
 }
 
 .games-content-media {

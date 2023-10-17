@@ -47,12 +47,15 @@ document.addEventListener('DOMContentLoaded', function () {
 	  breakpoints: {
 		1050: {
 			perPage: 3,
+			perMove: 3,
 		},
 		715: {
 			perPage: 2,
+			perMove: 2,
 		},
 		480: {
 			perPage: 1,
+			perMove: 1,
 		},
   }
 	}).mount();
