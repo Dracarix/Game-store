@@ -77,35 +77,26 @@
     #tab-media1{
         display: block;
     }
+    header ul{
+        width: 65vw;
+    }
 }
 
 @media (max-width: 1050px){
-    /* #second-product{
-        width: 80%;
-
-        
-        position: relative;
-        left: 50%;
-        transform: translate(-50%);
+    header ul{
+        width: 60vw;
     }
-    #featured-product{
-        width: 80%;
-        position: relative;
-        left: 50%;
-        transform: translate(-50%);
-    } */
 }
 
 
 
 @media (max-width: 950px){
-    /* #second-product{
-        width: 70%;
+    header ul{
+        width: 55vw;
     }
-    #featured-product{
-        width: 70%;
-        
-    } */
+    #new-product{
+        margin-bottom: 48px;
+    }
 }
 @media (max-width: 924px){
     .baner{
@@ -147,11 +138,8 @@ header {
     position: fixed;
     background: #171A21;
     z-index: 5;
-    font-size: 18px;
+    font-size:calc(11px + 1vmin);
     
-}
-.header-checkbox{
-    display: block;
 }
 
 header .logo{
@@ -172,7 +160,7 @@ header nav ul{
     color: #fff;
     cursor: pointer;
     font-size:calc( 20px + 3vmin);
-    position: fixed;
+    position: absolute;
     right: 10%;
 }
 header nav ul li{
