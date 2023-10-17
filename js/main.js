@@ -1,10 +1,20 @@
 const listItems = document.querySelectorAll('.list-games');
 const infoBox = document.querySelector('.info-box');
 const infoContent = document.querySelector('.info-content');
+
 document.getElementById('tab1').style.display = 'block';
+
 const mediaLeftColumn = window.matchMedia("(min-width:1550px)");
+
 const mediaListitem = window.matchMedia("(min-width:1160px)");
+
 const leftColumn = document.querySelector('.left_column');
+
+const fullScrean = document.getElementById('menu_toggle');
+const Header = document.getElementById('header');
+const checkboxed = document.getElementById('checkboxed');
+const addClassfromHeader = window.matchMedia("(max-width: 715px)");
+
 let currentInfo = null;
 let lastHoveredItem = null;
 listItems.forEach((item) => {
@@ -137,3 +147,20 @@ mediaLeftColumn.addListener(handleMediaLeftColumn);
 
 handleMediaLeftColumn(mediaLeftColumn);
 
+function kakjeyaustal() {
+    if (addClassfromHeader.matches) {
+        Header.classList.add('ne-checked');
+    } else {
+        Header.classList.remove('ne-checked');
+    }
+}
+kakjeyaustal();
+addClassfromHeader.addListener(kakjeyaustal);
+
+fullScrean.addEventListener("change", function() {
+    if (fullScrean.checked) {
+        Header.classList.add('ne-checked');
+    } else {
+        Header.classList.remove('ne-checked');
+    }
+});

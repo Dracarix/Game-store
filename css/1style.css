@@ -15,8 +15,8 @@ main{
   width: 100%;
 }
 /* common style start */
-nav input[type="checkbox"],
-nav label{
+#menu_toggle,
+#checkboxed{
   color: #fff;
   display: none;
 }
@@ -101,14 +101,83 @@ background-color: #1B2838;
 }
 /* baner end */
 /* header start */
-header{
-  display: flex;
+.ne-checked{
+  
+  animation: ne-checkeds .3s ease;
+  display: none;
+}
+@keyframes ne-checkeds {
+  0%{
+    transform: translate(0,0);
+
+    display: block;
+  }
+  50%{
+    
+    transform: translate(-95%,0);
+  }
+  100%{
+    
+    transform: translate(-95%, -100%);
+    display: none;
+  }
+}
+@keyframes checkeds {
+  0%{
+    transform: translate(-95%,-100%);
+
+    display: block;
+  }
+  50%{
+    
+    transform: translate(-95%,0);
+  }
+  100%{
+    
+    transform: translate(0, 0);
+    
+  }
+}
+.header-checkbox{
+  display:none;
+}
+.header-checkbox{
+  display: none;
   background: #171A21;
   margin-bottom:4px;
+  justify-content: center;
+  align-items: center;
+  max-height: 10vw;
   box-shadow: 0 1px 30px #000000;
   top: 0;
   position: relative;
 }
+
+.header-checkbox .logo{
+  display: flex;
+  width: 30vw;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+.header-checkbox .logo img{
+  width: 100%;
+  transform: scale(1);
+}
+
+
+header{
+  display: flex;
+  background: #171A21;
+  margin-bottom:4px;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 1px 30px #000000;
+  top: 0;
+  position: relative;
+  animation: checkeds 0.3s ease ;
+}
+
 header .logo{
   display: flex;
   width: 250px;
@@ -124,53 +193,61 @@ header .logo .nazvanie{
   color: #fff;
   opacity: 0.8;
 }
-header .top{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 header .login a{
   text-decoration: none;
   color: #fff;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 header .login a:hover{
   opacity: 1;
 }
 
-header .login{
+header ul li:last-child{
   right: 5%;
   position: absolute;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  transform: translate(0, -50%);
+  
 }
 
 
-header .top ul{
+header  ul{
   display: flex;
+  width: 70vw;
   list-style-type: none;
   position: relative;
+  
   left:10%;
   margin: 0;
   padding: 0;
 }
-header .top ul li{
+header ul li{
   margin-right: 10px;
   opacity: .7;
+  transition: all 0.3s ease;
 
 }
-header .top ul li:hover{
+header  ul li:hover{
   opacity: 1;
 }
 
 
-header .top ul li a{
+header  ul li a{
   color: #fff;
   text-decoration: none;
+  
 }
 header .logo img{
   width: 100%;
   transform: scale(1.9);
+}
+.media-footer{
+  display: none;
 }
 /* header end */
 
@@ -286,6 +363,7 @@ header .logo img{
 .name-this-block{
   color: #Fff;
   opacity: 0.8;
+  font-size: calc(12px + 1vmin);
 }
 /* third slider end */
 /* second slider start */
@@ -302,7 +380,7 @@ header .logo img{
 #second-product h3{
   color: #fff;
   opacity: 0.8;
-  font-size: 18px;
+  font-size: calc(12px + 1vmin);
   font-weight: bold;
 }
 #second-product .splide__slide:hover .cena-dlya-deshevie-igri,
