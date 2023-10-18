@@ -46,6 +46,7 @@
     #new-product{
         width: 90%;
     }
+    
 
     #new-product img{
         object-fit: contain;
@@ -64,12 +65,28 @@
         transform: translate(-50%);
     }
 
-
+    .buy-menu h1{
+        color: #fff;
+        font-size: calc(8px + 1vmin);
+    }
 }
 
 @media (max-width: 1170px){
     .games-content{
         display: none;
+    }
+    .shop-list{
+        max-width: 98vw;
+    }
+    .logo-game{
+        width: 99%;
+    }
+    .tegi-category a:last-child{
+        display: none;
+    }
+    .tegi-category{
+        justify-content: flex-start;
+        max-width: 300px;
     }
     .games-content-media{
         display: flex;
@@ -88,7 +105,112 @@
     }
 }
 
+@media (max-width: 1130px){
+    .otsek-1{
+        flex-direction: column-reverse;
+    }
 
+    .shop-list{
+        width: 98vw;
+        position: relative;
+        left: 50%;
+        display: flex;  
+        flex-direction: column;
+        align-items: center;
+
+        transform: translate(-50%);
+    }
+    .name-game-inShop{
+        display: none;   
+    }
+    .slideri{
+        width: 90vw;
+        position: relative;
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .first{
+        width: 100%;
+    }
+    .second{
+        width: 100%;
+    }
+    .name-game-inShop-media{
+        margin: 18px 20px ;
+        display: block;
+    }
+    
+    .name-game-inShop-media h2{
+        font-size: calc(10px + 2vmin);
+        margin: 0;
+        position: absolute;
+        padding: 0;
+        top: 50px;
+        left: 0;
+        color: #fff;
+        opacity: .8;
+    }
+    .first-2-otsek{
+        display: flex;
+        width: 95vw;
+        
+        justify-content: center;
+        align-items: center;
+    }
+    .tegi-on-media{
+        display:block;
+        margin-left: 36px;
+        
+        
+
+    }
+    .first-1-otsek{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tegi-on-fullscrean{
+        display: none;
+    }
+    .logo-game{
+        width: 50vw;
+        position: relative;
+        top: 50%;
+        margin-right: 10px;
+        transform: translate(0,-10%);
+    }
+    .first-2-otsek1{
+        width: 40vw;
+        height: 25vh;
+        position: relative;
+
+        margin-left: 10px;
+
+    }
+    .first-2-otsek1 p{
+        max-width: 40vw;
+    }
+    .shop-list .sopisanie{
+       max-width: 99vw;
+       margin: 36px 0 25px  25px
+    }
+    .shop-list .primary-block{
+        max-width: 90vw;
+        position: relative;
+        left: 50%;
+        transform: translate(-55%);
+    }
+    .buy-menu{
+        width:70vw ;
+        position: relative;
+        left: -20px;
+    }
+}
 
 @media (max-width: 950px){
     header ul{
@@ -96,6 +218,13 @@
     }
     #new-product{
         margin-bottom: 48px;
+    }
+    .first-2-otsek1{
+        margin-top: 20px;
+        width: 30vw;
+    }
+    .logo-game{
+        width: 60vw;
     }
 }
 @media (max-width: 924px){
@@ -108,25 +237,12 @@
 
 }
 @media (max-width: 830px){
-    /* #second-product{
-        width: 60%;
+    .first-2-otsek1{
+        margin-top: 40px;
     }
-    #new-product{
-        margin-bottom: 48px;
+    .buy-menu{
+        width:70vw ;
     }
-    #featured-product{
-        width: 60%;
-        
-    }
-    #second-product .cena-dlya-deshevie-igri{
-        background: #407b9a;
-        opacity: 0.9;
-        margin:25px 0 0 0 ;
-        height: 35px;
-        display: flex;
-        align-items: center;
-        
-    } */
 }
 
 @media (max-width: 715px){
@@ -141,7 +257,20 @@ header {
     font-size:calc(11px + 1vmin);
     
 }
-
+.shop-list .sopisanie{
+    font-size: calc(8px + 1vmin);
+ }
+.first-2-otsek{
+    display: flex;
+    width: 95vw;
+    left: 0;
+    position: relative;
+    justify-content: center;
+    align-items: flex-start;
+}
+.otsek-1{
+    max-width: 100vw;
+}
 header .logo{
     position: absolute;
     left: 0;
@@ -152,6 +281,9 @@ header nav ul{
     height: 70vh;
     left:0;
     margin-top: 100px;
+}
+.buy-btn{
+    left: 50% ;
 }
 
 #checkboxed{
@@ -208,6 +340,14 @@ footer{
 .header-checkbox{
     display: flex;
 }
+.shop-list{
+    max-width: 94vw;
+}
+}
+@media (max-width: 680px){
+    .subtitle-column{
+        width: 80px;
+    }
 }
 @media (max-width: 600px){
     /* #second-product{
@@ -246,24 +386,10 @@ footer{
 
 }
 @media (max-width: 480px){
-    /* #second-product{
-        width: 30%;
-        
-        
+    .logo-game{
+        width: 40vw;
+        top: 0;
     }
-    #second-product .cena-dlya-deshevie-igri{
-        background: #407b9a;
-        opacity: 0.9;
-        margin:60px 0 0 0 ;
-        height: 35px;
-        display: flex;
-        align-items: center;
-        
-    }
-    #featured-product{
-        width: 30%;
-        
-    } */
 
     .list-games-media{
         max-height:15vw ;
@@ -273,6 +399,14 @@ footer{
         aspect-ratio: 15/8;
         
         
+    }
+    .first-2-otsek{
+        height: 20vh;
+    }
+    .first-2-otsek1{
+        margin-top: 0;
+        width: 40vw;
+        right: 0;
     }
 }
 @media (max-width: 430px){

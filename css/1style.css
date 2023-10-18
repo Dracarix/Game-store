@@ -709,12 +709,13 @@ header .logo img{
 /* games-content end */
 /* games-content-media start */
 .tab-container-media {
-  width: 300px;
+  width: 100%;
   position: relative;
   left: 50%;
   margin: 10px 0 0 0;
   transform: translate(-50%);
-
+  display: flex;
+  justify-content: center;
 
 }
 
@@ -726,6 +727,7 @@ header .logo img{
   border: none;
   border-radius: 4px;
   cursor: pointer;
+
   margin-right: 10px;
   transition: all 0.5s ease;
 }

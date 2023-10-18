@@ -8,7 +8,6 @@
     margin-top: 24px;
 }
 
-
 .shop-list .img-default{
     display: flex;
     justify-content:center;
@@ -37,29 +36,43 @@
 
 .shop-list .sopisanie{
     color:#b9bec4;
-    margin: 30px 50px 0 100px;
+    position: relative;
+    left: 0;
+    margin: 36px 0 0 25px;
+    max-width: 50vw;
 }
 
 .shop-list .sopisanie p{
     font-size: 18px;
 }
-
+.shop-list .sopisanie ul{
+    list-style-type: square;
+    padding: 0 0 0 25px;
+}
+.shop-list .sopisanie ul li{
+    margin-bottom: 5px;
+}
+.name-game-inShop-media{
+    display: none;
+}
 .shop-list .sopisanie strong{
     text-transform: uppercase;
     display: flex;
-    justify-content:center;
+    justify-content:flex-start;
     align-items:center;
     padding:15px 0 15px;
+    border-bottom: 1px solid #ffffff49;
 }
 
 .shop-list .primary-block{
     box-shadow:rgb(0, 0, 0)0px 0px 5px 0px;
-    margin-left: 100px;
-    margin-right: 100px;
+    max-width: 50vw;
 }
 
 .shop-list .primary-block .nprimary{
     display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 .shop-list .primary-block h2{
@@ -67,7 +80,11 @@
     justify-content:center;
     align-items:center;
     color: #b9bec4;
-    font-size: 20px;
+    opacity: 0.8;
+    margin: 0;
+    height: 40px;
+    border-bottom: 1px solid #ffffff5d;
+    font-size: calc(10px + 1vmin);
 }
 
 .shop-list .game-features-left strong,
@@ -81,15 +98,32 @@
     color: #b9bec4;
 }
 
-.shop-list .primary-block ul strong{
-    margin-bottom:15px ;
-}
+.viev-harakteristiki-1 {
+    display: flex;
+    justify-self: flex-start;
+    opacity: 0.8;
+    margin:15px 10px 5px 10px ;    
 
+}
+.viev-harakteristiki-2{
+    display: flex;
+    justify-content: space-around;
+    opacity: 0.8;
+    margin:15px 10px 5px 10px ;    
+}
+.shop-list .primary-block ul{
+    margin: 0;
+}
 .shop-list .primary-block ul li{
     list-style-type: none;
     color: #b9bec4;
+    font-size: calc(4px + 1vmin);
     margin-bottom: 5px;
     margin-top: 5px;
+}
+.shop-list .primary-block ul li span{
+    margin-right: 10px;
+    opacity: 0.5;
 }
 
 /* shop carusel start */
@@ -109,30 +143,29 @@
   .first{
     position: relative;
     top: 12px;
+
   }
   .second{
     margin-top: 16px;
   }
   
-  .main-img{
-    width: 500px;
-  }
+
 
   .splide__slide {
-    opacity: 0.6;
+    opacity: 0.8;
   }
   .splide__track--nav>.splide__list>.splide__slide.is-active {
-    border: none;
+    border: 2px solid #fff;
     opacity: 1;
-}
+  }
 
 
   /* shop carusel stop */
 .path_game{
     position: absolute;
-    top: 68px;
+    top: 0;
     display: flex;
-    left: 20%;
+    left:20px ;
     justify-content: center;
     align-items: center;
     
@@ -141,7 +174,7 @@
 .path_game p{
     text-decoration: none;
     color: #fff;
-    margin-right: 4px;
+    margin: 0 4px 0 0;
     opacity: 0.6;
     font-size: 13px;
 }
@@ -157,6 +190,8 @@
 
 .otsek-1{
     display: flex;
+    margin-top: 40px;
+        max-width: 99%;
 }
 
 .logo-game img{
@@ -168,31 +203,41 @@
 }
 
 .name-game-inShop h2{
-    font-size: 26px;
+    font-size: calc(10px + 2vmin);
     margin: 0;
     padding: 0;
     color: #fff;
     opacity: .8;
 }
 
+
+.short-description{
+    margin-right: 16px;
+    justify-content: flex-start;
+    align-items: center;
+}
 .short-description p{
     opacity: 0.8;
+    font-size: calc(6px + 1vmin);
     color: #Fff;
+
 }
 .mini-info-game{
     display: flex;
     flex-direction: column;
+    
 }
 .relise-data{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    font-size: calc(4px + 1vmin);
 }
 
 .relise-data p{
     color: #fff;
     opacity: 0.4;
-    font-size: 12px;
+    font-size: calc(4px + 1vmin);
 }
 .subtitle-column{
     width: 120px;
@@ -200,7 +245,7 @@
 .subtitle-column span{
     color: #fff;
     opacity: 0.2;
-    font-size: 13px;
+    font-size: calc(4px + 1vmin);
 }
 .dev-row{
     display: flex;
@@ -209,10 +254,10 @@
 }
 
 .dev-row p{
-    margin: 5px 0;
+    margin: 5px 0; 
     color: #fff;
     opacity: 0.4;
-    font-size: 14px;
+    font-size: calc(4px + 1vmin);
 }
 .tegi-category {
     display: flex;
@@ -224,7 +269,7 @@
 
 .tag-label{
     opacity: 0.2;
-    font-size: 14px;
+    font-size: calc(6px + 1vmin);
     color: #fff;
     margin: 72px 0 0 4px;
 
@@ -235,7 +280,7 @@
     padding: 3px 7px;
     text-decoration: none;
     color:#3e9deb;
-    font-size: 12px;
+    font-size: calc(5px + 1vmin);
     background: rgba(36,114, 133, 0.6);
 }
 
@@ -244,7 +289,7 @@
     color: #fff;
 }
 .buy-menu{
-    width: 800px;
+    width: 40vw;
     position: relative;
     left: 5%;
 
@@ -258,7 +303,7 @@
 
 .buy-menu h1{
     color: #fff;
-    font-size: 24px;
+    font-size: calc(10px + 1vmin);
 }
 .buy-menu .platform-img img{
     width: 100%;
@@ -274,6 +319,11 @@
     width: 20px;
 
 }
+.first-2-otsek{
+    width: 28vw;
+}
+
+
 .buy-btn {
     display: flex;
     background: #000;
@@ -281,8 +331,8 @@
     padding:0 16px 0;
     justify-content: space-between;
     position: absolute;
-    left: 50%;
-    transform: translate(110%);
+    left: 60%;
+
     bottom: -25px ;
     align-items: center;
     height: 40px;
@@ -292,6 +342,7 @@
     color: #Fff;
     opacity: 0.8;
     margin-right: 5px;
+    font-size: calc(4px + 1vmin);
 }
 
 .buy-btn button{
@@ -308,4 +359,21 @@
     opacity: 1;
 }
 
-
+.knopochka_s_playem{
+    background-image: url(../images/ico_game_video.png);
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 32px;
+    height: 32px;
+    opacity: 1;
+}
+/* 
+.tegi-on-media{
+    padding-right: 1000px;
+} */
+.tegi-on-media{
+    display: none;
+}
