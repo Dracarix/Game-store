@@ -216,6 +216,7 @@
     margin-right: 16px;
     justify-content: flex-start;
     align-items: center;
+    width:22vw ;
 }
 .short-description p{
     opacity: 0.8;
