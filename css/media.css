@@ -394,11 +394,13 @@ footer{
         max-height:15vw ;
         min-height: 60px;
     }
+
     .img-conteiner img{
         aspect-ratio: 15/8;
         
         
     }
+
     .buy-btn-media button{
         background: linear-gradient(to right, #0ece0e,#0ec50e);
         border: none;
@@ -408,11 +410,12 @@ footer{
         opacity: 0.9;
         transition: opacity 0.4s ease-in-out;
     }
+
     .buy-btn-media button:hover {
         opacity: 1;
     }
     
-    }
+    
     .buy-menu-media{
         width: 80vw;
         position: relative;
@@ -425,18 +428,22 @@ footer{
         justify-content: space-between;
         border-radius: 5px;
     }
+
     .buy-menu-media h1{
         color: #fff;
         font-size: calc(9px + 1vmin);
         margin: 0;
     }
+
     .buy-menu-media .platform-img img{
         width: 100%;
     }
+
     .buy-menu-media .platform-img{
         width: 15px;
     
     }
+
     .buy-menu-otsek{
         display: flex;
         flex-direction: column;
@@ -444,58 +451,73 @@ footer{
         align-items: flex-end;
         height: 5vh;
     }
+
     .shop-list .tab-button-media{
         width: 20vw;
     }
+
     .primary-block strong{
         font-size: calc(6px + 1vmin);
     }
 
+
     .buy-menu{
         display: none;
     }
+
 
     .first-2-otsek{
         height: 20vh;
         flex-direction: column;
         margin-bottom: 70px;
     }
+
     .logo-game{
         width: 90vw;
         height: 20vh;
         margin: 30px 0 80px 0;
     }
+
     .logo-game img{
         width: 100%;
         height: 100%;
     }
+
     .name-game-inShop-media{
         top: 10%;
         
     }
+
     .short-description{
         display: none;
     }
+
     .short-description-media{
         display: block;
         margin-bottom: 80px;
     }
+
     .tegi-on-media .tegi-category{
         width: 50vw;
     }
+
     .mini-info-game br{
         display: none;
     }
+
     .mini-info-game{
         height: 5vh;
         
     }
+
     .relise-data{
         height: 17px;
     }
+
     .dev-row{
         height: 17px;
     }
+
     .first-2-otsek1{
         margin-top: 30px;
         width: 90vw;
@@ -503,6 +525,7 @@ footer{
         display: flex;
         flex-direction: column-reverse;
     }
+
 }
 @media (max-width: 430px){
     .platforms{
