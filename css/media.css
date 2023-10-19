@@ -41,12 +41,16 @@
         display: none;
     }
 }
-
+@media (max-width: 1300px){
+    
+} 
 @media (max-width: 1200px) {
     #new-product{
         width: 90%;
     }
-    
+    .tegi-category{
+        width: 30.5vw;
+    }
 
     #new-product img{
         object-fit: contain;
@@ -115,9 +119,10 @@
         position: relative;
         left: 50%;
         display: flex;  
+        justify-content: center;
         flex-direction: column;
         align-items: center;
-
+        
         transform: translate(-50%);
     }
     .name-game-inShop{
@@ -139,17 +144,17 @@
     .second{
         width: 100%;
     }
-    .name-game-inShop-media{
-        margin: 18px 20px ;
-        display: block;
-    }
-    
     .name-game-inShop-media h2{
         font-size: calc(10px + 2vmin);
-        margin: 0;
+    }
+    
+    .name-game-inShop-media{
+        
+        margin: 18px 20px ;
+        display: block;
         position: absolute;
         padding: 0;
-        top: 50px;
+        top: 24px;
         left: 0;
         color: #fff;
         opacity: .8;
@@ -192,18 +197,22 @@
         margin-left: 10px;
 
     }
-    .first-2-otsek1 p{
-        max-width: 40vw;
+    .first-2-otsek1 .short-description p{
+        width: 30vw;
+    }
+    .relise-data{
+        width: 100%;
+    }
+    .data{
+        width: 100%;
     }
     .shop-list .sopisanie{
        max-width: 99vw;
        margin: 36px 0 25px  25px
     }
     .shop-list .primary-block{
-        max-width: 90vw;
-        position: relative;
-        left: 50%;
-        transform: translate(-55%);
+        width: 80vh;
+        margin: 0 auto;
     }
     .buy-menu{
         width:70vw ;
@@ -240,8 +249,21 @@
     .first-2-otsek1{
         margin-top: 40px;
     }
+    .buy-btn{
+        width: 135px;
+        padding: 0 16px 0 5px ;
+    }
     .buy-menu{
         width:70vw ;
+    }
+    .shop-list .primary-block{
+        width: 70%;
+    }
+    .shop-list{
+        max-width:94vw ;
+    }
+    .tegi-category{
+        width: 40vw;
     }
 }
 
@@ -340,9 +362,7 @@ footer{
 .header-checkbox{
     display: flex;
 }
-.shop-list{
-    max-width: 94vw;
-}
+
 }
 @media (max-width: 680px){
     .subtitle-column{
@@ -350,26 +370,9 @@ footer{
     }
 }
 @media (max-width: 600px){
-    /* #second-product{
-        width: 40%;
-        
+    .tab-button-media{
+        font-size: calc(4px + 1vmin);
     }
-    .splide__wrapper{
-        margin: 10px 0 0 0;
-    }
-    #second-product .cena-dlya-deshevie-igri{
-        background: #407b9a;
-        opacity: 0.9;
-        margin:25px 0 0 0 ;
-        height: 35px;
-        display: flex;
-        align-items: center;
-        
-    }
-    #featured-product{
-        width: 40%;
-        
-    } */
     .img-conteiner img{
         aspect-ratio: 16/8;
 
@@ -386,10 +389,6 @@ footer{
 
 }
 @media (max-width: 480px){
-    .logo-game{
-        width: 40vw;
-        top: 0;
-    }
 
     .list-games-media{
         max-height:15vw ;
@@ -400,13 +399,95 @@ footer{
         
         
     }
+    .buy-menu-media{
+        width: 80vw;
+        position: relative;
+    
+        display: flex;
+        align-items: flex-start;
+        background: #49555F;
+        margin: 24px 0 0 0;
+        padding: 16px 16px 24px 16px;
+        justify-content: space-between;
+        border-radius: 5px;
+    }
+    .buy-menu-media h1{
+        color: #fff;
+        font-size: calc(9px + 1vmin);
+        margin: 0;
+    }
+    .buy-menu-media .platform-img img{
+        width: 100%;
+    }
+    .buy-menu-media .platform-img{
+        width: 15px;
+    
+    }
+    .buy-menu-otsek{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 5vh;
+    }
+    .shop-list .tab-button-media{
+        width: 20vw;
+    }
+    .primary-block strong{
+        font-size: calc(6px + 1vmin);
+    }
+
+    .buy-menu{
+        display: none;
+    }
+
     .first-2-otsek{
         height: 20vh;
+        flex-direction: column;
+        margin-bottom: 70px;
+    }
+    .logo-game{
+        width: 90vw;
+        height: 20vh;
+        margin: 30px 0 80px 0;
+    }
+    .logo-game img{
+        width: 100%;
+        height: 100%;
+    }
+    .name-game-inShop-media{
+        top: 10%;
+        
+    }
+    .short-description{
+        display: none;
+    }
+    .short-description-media{
+        display: block;
+        margin-bottom: 80px;
+    }
+    .tegi-on-media .tegi-category{
+        width: 50vw;
+    }
+    .mini-info-game br{
+        display: none;
+    }
+    .mini-info-game{
+        height: 5vh;
+        
+    }
+    .relise-data{
+        height: 17px;
+    }
+    .dev-row{
+        height: 17px;
     }
     .first-2-otsek1{
-        margin-top: 0;
-        width: 40vw;
+        margin-top: 30px;
+        width: 90vw;
         right: 0;
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
 @media (max-width: 430px){
@@ -422,6 +503,9 @@ footer{
     .baner-media{
         margin-bottom: 24px;
     }
+    .name-game-inShop-media{
+        top: 9%;
+    }
 } 
 @media (max-width: 340px){
     .img-conteiner img{
@@ -435,5 +519,13 @@ footer{
     }
     .baner-media{
         margin-bottom: 16px;
+    }
+    .first-2-otsek1{
+        width: 290px;
+    }
+}
+@media (max-width: 340px){
+    .first-2-otsek{
+        width: 300px;
     }
 }

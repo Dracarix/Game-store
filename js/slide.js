@@ -36,7 +36,7 @@
 			fixedHeight: 70,
 			},
 		480: {
-			fixedHeight:40,
+			fixedHeight:60,
 			fixedWidth:100,
 		}
 	},

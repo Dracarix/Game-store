@@ -54,6 +54,7 @@
 }
 .name-game-inShop-media{
     display: none;
+    
 }
 .shop-list .sopisanie strong{
     text-transform: uppercase;
@@ -66,7 +67,7 @@
 
 .shop-list .primary-block{
     box-shadow:rgb(0, 0, 0)0px 0px 5px 0px;
-    max-width: 50vw;
+    width: 50vw;
 }
 
 .shop-list .primary-block .nprimary{
@@ -222,6 +223,18 @@
     color: #Fff;
 
 }
+.short-description-media{
+    margin-right: 16px;
+    justify-content: flex-start;
+    align-items: center;
+    display: none;
+}
+.short-description-media p{
+    opacity: 0.8;
+    font-size: calc(6px + 1vmin);
+    color: #Fff;
+
+}
 .mini-info-game{
     display: flex;
     flex-direction: column;
@@ -229,6 +242,7 @@
 }
 .relise-data{
     display: flex;
+    width: 100%;
     justify-content: flex-start;
     align-items: center;
     font-size: calc(4px + 1vmin);
@@ -261,10 +275,10 @@
 }
 .tegi-category {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-end;
-    width: 340px;
-    
+    width: 31vw;
+    position: relative;
 }
 
 .tag-label{
@@ -280,7 +294,7 @@
     padding: 3px 7px;
     text-decoration: none;
     color:#3e9deb;
-    font-size: calc(5px + 1vmin);
+    font-size: calc(3px + 1vmin);
     background: rgba(36,114, 133, 0.6);
 }
 
@@ -300,7 +314,9 @@
     justify-content: space-between;
     border-radius: 5px;
 }
-
+.buy-menu-media{
+    display: none;
+}
 .buy-menu h1{
     color: #fff;
     font-size: calc(10px + 1vmin);
