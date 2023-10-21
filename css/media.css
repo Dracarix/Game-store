@@ -519,7 +519,15 @@ footer{
         
         
     }
-
+    .buy-btn-media{
+        background-color: #000;
+        border-radius: 3px;
+        padding: 3px 5px;
+        font-size: calc(7px + 1vmin);
+    }
+    .buy-btn-media span{
+        color: #fff;
+    }
     .buy-btn-media button{
         background: linear-gradient(to right, #0ece0e,#0ec50e);
         border: none;
@@ -527,6 +535,7 @@ footer{
         color: #fff;
         padding: 5px 5px;
         opacity: 0.9;
+        margin-left: 4px;
         transition: opacity 0.4s ease-in-out;
     }
 
@@ -683,6 +692,15 @@ footer{
     }
     .navigationnie-knopki .navigationnie-ssilki{
         width: 93%;
+    }
+    .otsek-1{
+        max-width: 99%;
+    }
+    .tegi-on-media .tegi-category{
+        width: 260px;
+    }
+    .first-2-otsek{
+        width: 300px;
     }
 } 
 @media (max-width: 340px){
