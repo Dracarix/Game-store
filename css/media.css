@@ -213,6 +213,7 @@
     .shop-list .primary-block{
         width: 80vh;
         margin: 0 auto;
+        margin-bottom: 40px;
     }
     .buy-menu{
         width:70vw ;

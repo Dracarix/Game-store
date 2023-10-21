@@ -65,13 +65,15 @@
     display: flex;
     justify-content:flex-start;
     align-items:center;
-    padding:15px 0 15px;
+    padding:15px 0 10px;
+    margin-bottom: 10px;
     border-bottom: 1px solid #ffffff49;
 }
 
 .shop-list .primary-block{
     box-shadow:rgb(0, 0, 0)0px 0px 5px 0px;
     width: 50vw;
+    margin-bottom: 40px;
 }
 
 .shop-list .primary-block .nprimary{
