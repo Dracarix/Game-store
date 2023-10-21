@@ -171,29 +171,60 @@ fullScrean.addEventListener("change", function() {
 const category = document.querySelector('#category-drop-block');
 const downBlock = document.querySelector('.drop-down-block-navigation');
 
-function handleEvent(event) {
-    if (event.target === category) {
-        downBlock.classList.toggle('droppeds');
+function handleCategoryMouseEnter() {
+    downBlock.classList.add('droppeds');
+    if (downBlock.classList.contains('lifts')) {
         downBlock.classList.remove('lifts');
-    } else if (event.target === downBlock) {
-        downBlock.classList.toggle('droppeds');
-        downBlock.classList.remove('lifts');
-    } else {
-        downBlock.classList.remove('droppeds');
-        downBlock.classList.add('lifts');
     }
+}
+
+function handleCategoryMouseOut() {
+    if (downBlock.classList.contains('droppeds')) {
+        downBlock.classList.remove('droppeds');
+    }
+    downBlock.classList.add('lifts');
+}
+
+function handleDownBlockMouseOver() {
+    downBlock.classList.add('droppeds');
+    if (downBlock.classList.contains('lifts')) {
+        downBlock.classList.remove('lifts');
+    }
+}
+
+function handleDownBlockMouseOut() {
+    if (downBlock.classList.contains('droppeds')) {
+        downBlock.classList.remove('droppeds');
+    }
+    downBlock.classList.add('lifts');
+}
+
+function addEventListeners() {
+    category.addEventListener('mouseenter', handleCategoryMouseEnter);
+    category.addEventListener('mouseout', handleCategoryMouseOut);
+    downBlock.addEventListener('mouseover', handleDownBlockMouseOver);
+    downBlock.addEventListener('mouseout', handleDownBlockMouseOut);
+}
+
+function removeEventListeners() {
+    category.removeEventListener('mouseenter', handleCategoryMouseEnter);
+    category.removeEventListener('mouseout', handleCategoryMouseOut);
+    downBlock.removeEventListener('mouseover', handleDownBlockMouseOver);
+    downBlock.removeEventListener('mouseout', handleDownBlockMouseOut);
 }
 
 function checkWindowWidth() {
     if (window.innerWidth >= 924 && window.innerWidth <= 2000) {
-        window.addEventListener('mouseover', handleEvent);
-        window.addEventListener('mouseout', handleEvent);
+        addEventListeners();
     } else {
-        window.removeEventListener('mouseover', handleEvent);
-        window.removeEventListener('mouseout', handleEvent);
-    };
-};
+        removeEventListeners();
+    }
+}
+
+// Вызовите функцию checkWindowWidth, чтобы установить обработчики событий
 checkWindowWidth();
+
+// Добавьте обработчик события изменения размера окна
 window.addEventListener('resize', checkWindowWidth);
 
 
