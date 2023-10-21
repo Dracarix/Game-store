@@ -300,7 +300,7 @@ header .logo img{
 .navigationnie-knopki{
   display: flex;
   position: absolute;
-  top:10%;
+  top:11.5%;
   left: 50%;
   transform: translate(-50%);
   z-index: 3;

@@ -45,6 +45,9 @@
     margin: 36px 0 0 25px;
     max-width: 50vw;
 }
+.sopisanie img{
+    max-width: 100%;
+}
 
 .shop-list .sopisanie p{
     font-size: 18px;
