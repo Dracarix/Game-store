@@ -6,6 +6,10 @@
     transform: translate(-50%);
     width: 1150px;
     margin-top: 24px;
+    z-index:1;
+}
+.shop-list img{
+    z-index: 1;
 }
 
 .shop-list .img-default{

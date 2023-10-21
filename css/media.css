@@ -243,7 +243,119 @@
     .baner-media{
         display: block;
     }
+    .navigationnie-knopki{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        max-width: 98%vw;
+    }
+    .navigationnie-knopki .navigationnie-ssilki{
+        background:linear-gradient(to right, #3A6698, #0F216E) ;
+        width: 97%;
+        padding: 10px 0 10px 20px;
+        
+      }
+    .navigationnie-knopki .navigationnie-ssilki:hover{
+        background:linear-gradient(to right, #1F6BB8, #0F216E) ;
+      }
+    .navigationnie-knopki #searchform #store_nav_search_term{
+        width: 100%;
+    }
+    .navigationnie-knopki #searchform {
+        width: 99%;
+        padding:  0 0 5px 0;
+    }
+    .drop-down-block-navigation-media {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        background: linear-gradient(to left bottom , #526070, #2D2F36);
+        z-index: 1;
+        overflow: hidden;
+        
+        
 
+      }
+      .drop-down-block-navigation-media span{
+        font-weight: 800;
+        font-size: 12px;
+        color: #2EBFFF;
+      }
+      .drop-down-block-navigation-media .special-section a{
+        display: inline;
+        width: auto;
+      
+        padding:0 0 3px 0 ;
+      }
+      .drop-down-block-navigation-media a{
+        text-decoration: none;
+        text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+        color: rgba(228, 227, 227, 0.7);
+        font-size: 15px;
+        border-bottom :1px solid transparent ;
+        transition: all 0.15s ease;
+      }
+      .drop-down-block-navigation-media .genre a{
+        display: inline;
+        width: auto;
+        padding:0 0 3px 0 ;
+        color: rgba(228, 227, 227, 0.9);
+       
+      }
+      .drop-down-block-navigation-media .special-section{
+        padding-left: 20px;
+      }
+      .drop-down-block-navigation-media .genre{
+        padding-left: 20px;
+      }
+      .animate-slide-down {
+        animation: slideDown 0.5s ease-in-out;
+        display: flex;
+        height: 381px;
+        flex-direction: column;
+        align-items: flex-start;
+        
+        z-index: 0;
+        
+    }
+    .animate-slide-up {
+        animation: slideUp 0.5s ease-in-out;
+        display: none;
+        height:0;
+        flex-direction: column;
+        align-items: flex-start;
+        z-index: 0;
+        
+    }
+
+    @keyframes slideUp {
+        0% {
+           
+    
+            height: 381px;
+            flex-direction: column;
+            display: flex;
+        }
+        100% {
+            height: 0;
+
+            display: none;
+        }
+    }
+    @keyframes slideDown {
+        0% {
+            height: 0;
+            display: none;
+    
+            
+        }
+        100% {
+            height: 381px;
+            flex-direction: column;
+            display: flex;
+        }
+    }
 }
 @media (max-width: 830px){
     .first-2-otsek1{
@@ -386,10 +498,16 @@ footer{
     .baner-media{
         margin-bottom: 32px;
     }
+    .navigationnie-knopki .navigationnie-ssilki{
+        width: 95%;
+    }
 
 }
 @media (max-width: 480px){
 
+    .path_game{
+        display: none;
+    }
     .list-games-media{
         max-height:15vw ;
         min-height: 60px;
@@ -467,7 +585,7 @@ footer{
 
 
     .first-2-otsek{
-        height: 20vh;
+        height: 30vh;
         flex-direction: column;
         margin-bottom: 70px;
     }
@@ -475,7 +593,8 @@ footer{
     .logo-game{
         width: 90vw;
         height: 20vh;
-        margin: 30px 0 80px 0;
+        margin: 0 0 140px 0;
+
     }
 
     .logo-game img{
@@ -485,6 +604,7 @@ footer{
 
     .name-game-inShop-media{
         top: 10%;
+        margin: 18px 20px 18px 0;
         
     }
 
@@ -494,11 +614,23 @@ footer{
 
     .short-description-media{
         display: block;
-        margin-bottom: 80px;
+
+        padding-bottom:120px ;
+    }
+    .short-description-media p{
+        font-size: 12px;
     }
 
     .tegi-on-media .tegi-category{
-        width: 50vw;
+        width: 300px;
+    }
+    .tegi-on-media span,
+    .tegi-on-media .app-teg{
+        font-size: 10px;
+        
+    }
+    .tegi-on-media span{
+        margin-left: 0px;
     }
 
     .mini-info-game br{
@@ -507,8 +639,12 @@ footer{
 
     .mini-info-game{
         height: 5vh;
-        
+        padding-top: 550px;
     }
+    .mini-info-game p,
+    .mini-info-game span{
+        font-size: 10px;
+    } 
 
     .relise-data{
         height: 17px;
@@ -521,6 +657,7 @@ footer{
     .first-2-otsek1{
         margin-top: 30px;
         width: 90vw;
+        height: 30vh;
         right: 0;
         display: flex;
         flex-direction: column-reverse;
@@ -543,7 +680,16 @@ footer{
     .name-game-inShop-media{
         top: 9%;
     }
+    .navigationnie-knopki .navigationnie-ssilki{
+        width: 93%;
+    }
 } 
+@media (max-width: 340px){
+    .tegi-on-media .tegi-category{
+        width: 260px;
+    }
+}
+
 @media (max-width: 340px){
     .img-conteiner img{
         margin-top: 10px;

@@ -4,7 +4,7 @@ body{
     background: #1B2838;
     margin: 0;
     padding: 0;
-    font-family:Arial;
+    font-family:Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -93,6 +93,7 @@ background-color: #1B2838;
   left: 50%;
   transform: translate(-50%);
   height:auto;
+  z-index: 3;
   display: none;
 }
 .baner-media video{
@@ -295,7 +296,184 @@ header .logo img{
     opacity: 0.6;
 }
 /*left column category end*/
+/* navigationnie-knopki start */
+.navigationnie-knopki{
+  display: flex;
+  position: absolute;
+  top:10%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 3;
+  align-items: center;
+  border-radius: 2px;
+  overflow: hidden;
+  background: linear-gradient(to right, #3A6698 , #0F216E);
+  user-select: none;
 
+} 
+.navigationnie-knopki .navigationnie-ssilki{
+  padding:10px 15px  ;
+  text-decoration: none;
+  color: #Fff;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 3;
+}
+.navigationnie-knopki .navigationnie-ssilki:hover{
+  background:linear-gradient(to right, #1F6BB8, rgba(0,0,0,0)) ;
+}
+.navigationnie-knopki #searchform{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 29px;
+  z-index: 3;
+}
+.with-dropdown{
+  cursor: pointer;
+}
+.drop-down-block-navigation-media{
+  display: none;
+}
+.drop-down-block-navigation{
+  position: absolute;
+  top:13.9%;
+  background: linear-gradient(to bottom right , #526070, #2D2F36);
+  box-shadow: 0 1px 10px #000;
+  left: 50%;
+  padding: 10px;
+  transform: translate(-50%);
+  z-index: 4;
+  display: none;
+}
+.droppeds{
+  display: flex;
+  animation:dropped 0.2s ease;
+}
+.lifts{
+  display: none;
+  animation: lift 0.2s ease;
+}
+@keyframes  lift{
+  0%{
+    display: flex;
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes dropped {
+  0%{
+    opacity: 0;
+    display: none;
+  }
+  100%{
+    display: flex;
+    opacity: 1;
+  }
+}
+.drop-down-block-navigation a{
+  text-decoration: none;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  color: rgba(228, 227, 227, 0.87);
+  font-size: 15px;
+  border-bottom :1px solid transparent ;
+  transition: all 0.15s ease;
+}
+.drop-down-block-navigation span{
+  font-weight: 800;
+  font-size: 12px;
+  color: #2EBFFF;
+}
+.drop-down-block-navigation .poloska img{
+  width: 100%;
+}
+
+.drop-down-block-navigation a:hover{
+  border-color: #fff;
+  color: #fff;
+}
+.mini-link a{
+  display: flex;
+}
+.mini-link{
+  padding:5px 0  10px 0;
+}
+.drop-down-block-navigation .special-section a{
+  display: inline;
+  width: auto;
+
+  padding:0 0 3px 0 ;
+}
+
+.drop-down-block-navigation .number-of-players a{
+  display: inline;
+  width: auto;
+  padding:0 0 3px 0 ;
+}
+.drop-down-block-navigation .genre a{
+  display: inline;
+  width: auto;
+  padding:0 0 3px 0 ;
+ 
+}
+.drop-down-block-navigation .special-section{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  border-right: 1px solid #000;
+}
+.drop-down-block-navigation .genre{
+  display: flex;
+  width: 150px;
+  padding: 0 0 0 20px;
+  flex-direction: column;
+  border-right: 1px solid #000;
+}
+.drop-down-block-navigation .number-of-players{
+  display: flex;
+  width: 200px;
+  padding: 0 0 0 20px;
+  flex-direction: column;
+}
+.navigationnie-knopki #searchform #store_nav_search_term{
+  height: 25px;
+  padding: 0;
+  background:#5699c0 ;
+  color: #000;
+  border: 1px solid #5699c0;
+  border-radius: 2px;
+  padding: 0 0 0 20px;
+  
+}
+.navigationnie-knopki #searchform #store_nav_search_term::-webkit-input-placeholder{
+    color: #000;
+    margin-left: 10px;
+}
+.navigationnie-knopki #searchform #store_nav_search_term::-moz-placeholder{
+  color: #000;
+  margin-left: 10px;
+}
+.navigationnie-knopki #searchform .img-in-navigation{
+  position: absolute;
+  right: 0;
+  height: 25px;
+  top: 0;
+}
+.navigationnie-knopki #searchform .img-in-navigation img{
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-image:url(../images/search.png) ;
+  right: -1px;
+  top: 2px;
+}
+
+/* navigationnie-knopki end */
 /*third splider start */
 .splide__wrapper{
   max-width: 1150px;
@@ -870,7 +1048,7 @@ header .logo img{
   margin:15px 5px 0 0;
 }
 
-.price-content {
+.games-content-media .price-content {
   display: flex;
   margin-right: 15px;
   justify-content: center;

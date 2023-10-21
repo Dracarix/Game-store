@@ -15,6 +15,9 @@ const Header = document.getElementById('header');
 const checkboxed = document.getElementById('checkboxed');
 const addClassfromHeader = window.matchMedia("(max-width: 715px)");
 
+const do924 = window.matchMedia("(min-width: 924px)");
+const ot924 = window.matchMedia("(max-width: 924px)");
+
 let currentInfo = null;
 let lastHoveredItem = null;
 listItems.forEach((item) => {
@@ -164,3 +167,49 @@ fullScrean.addEventListener("change", function() {
         Header.classList.remove('ne-checked');
     }
 });
+
+const category = document.querySelector('#category-drop-block');
+const downBlock = document.querySelector('.drop-down-block-navigation');
+
+function handleEvent(event) {
+    if (event.target === category) {
+        downBlock.classList.toggle('droppeds');
+        downBlock.classList.remove('lifts');
+    } else if (event.target === downBlock) {
+        downBlock.classList.toggle('droppeds');
+        downBlock.classList.remove('lifts');
+    } else {
+        downBlock.classList.remove('droppeds');
+        downBlock.classList.add('lifts');
+    }
+}
+
+function checkWindowWidth() {
+    if (window.innerWidth >= 924 && window.innerWidth <= 2000) {
+        window.addEventListener('mouseover', handleEvent);
+        window.addEventListener('mouseout', handleEvent);
+    } else {
+        window.removeEventListener('mouseover', handleEvent);
+        window.removeEventListener('mouseout', handleEvent);
+    };
+};
+checkWindowWidth();
+window.addEventListener('resize', checkWindowWidth);
+
+
+
+
+
+  const downBlockMedia = document.querySelector('#dropDown'); 
+
+
+  category.addEventListener('click',() =>{
+    if(downBlockMedia.classList.contains("animate-slide-up")){
+        downBlockMedia.classList.add("animate-slide-down");
+        downBlockMedia.classList.remove("animate-slide-up");
+    }else {
+        downBlockMedia.classList.remove("animate-slide-down");
+        downBlockMedia.classList.add("animate-slide-up");
+      }
+    
+  })
