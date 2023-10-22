@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	new Splide('#featured-product', {
 	  perPage: 4,
 	  perMove: 1,
-	  type:'loop',
+	  
 	  snap   : true,
 	  gap: "10px",
 	  pagination: true,

@@ -3,7 +3,7 @@
   document.addEventListener( 'DOMContentLoaded', function () {
 	const glavnaya = new Splide( '#main-carousel', {
 	type      : 'fade',
-	rewind    : true,
+	rewind    : false,
 	pagination: false,
 	arrows    : false,
 	start  : 2,
