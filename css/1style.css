@@ -928,6 +928,10 @@ header .logo img{
   display: none;
   
 }
+.double{
+  display: flex;
+  flex-direction: row;
+}
 
 .games-content-media {
   background: #284459;
