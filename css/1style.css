@@ -1209,3 +1209,257 @@ footer .contact{
 }
 
 /* footer end */
+/* all games start */
+.all-games{
+  max-width:950px ;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top:30px ;
+  min-height: 1300px;
+}
+.all-games-header{
+  margin-top: 120px;
+  position: relative;
+  left: 50%;
+  color: #Fff;
+  opacity: 0.6;
+  transform: translate(-50%);
+  max-width: 950px;
+}
+.search-games-all {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  z-index: 2;
+}
+.net-bolshe-igr{
+  width: 100%;
+  position: relative;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.net-bolshe-igr p{
+  font-size: 18px;
+  display: inline;
+  color: #fff;
+    opacity: 0.6;
+}
+.skokIgr{
+  display: inline-block;
+  font-size: 15px;
+  color: lightgoldenrodyellow;
+  margin: 10px 0 20px 0;
+}
+.vidno{
+  display: block;
+  animation: vidno 0.2s ease;
+}
+@keyframes vidno {
+  0%{
+    display: block;
+    opacity: 0;
+  }
+  100%{
+    display: block;
+    opacity: 1;
+  }
+}
+.nevidno{
+  display: none;
+  animation: nevidno 0.2s ease;
+}
+@keyframes nevidno {
+  0%{
+    display: block;
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    display: block;
+  }
+}
+.search-games-all li{
+  height: 60px;
+  list-style-type: none;
+  margin-bottom: 10px;
+  position: relative;
+  width: 85%;
+  transition: all 0.3s ease;
+}
+.search-games-all li .all-games-href{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+  color: #fff;
+  background-color: #16202D;
+  font-size: calc(4px + 1vmin);
+}
+.search-games-all li .all-games-href:hover{
+  background-color: #101822;
+}
+.search-games-all li .all-games-href img{
+  height: 100%;
+}
+.search-games-all li .all-games-href .platform-all-games{
+  height: 18px;
+  display: flex;
+}
+.search-games-all li .all-games-href .platform-all-games .platform-img img{
+  height: 100%;
+}
+.search-games-all li .all-games-href .content-all-games{
+  margin-left: 20px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.search-games-all li .all-games-href .content-all-games h3{
+  margin: 0;
+  color: #ffffff;
+  opacity: 0.6;
+  
+}
+.search-games-all li .all-games-href .date-all-games{
+  position: absolute;
+  left: 60%;
+  transform: translate(-50%);
+  color: #15b1ff;
+  opacity: 0.6;
+  font-size: 12px;
+}
+.search-games-all li .all-games-href .price-all-game{
+  position: absolute;
+  right: 5px;
+  opacity: 0.6;
+}
+#search-games-all{
+  width: 800px;
+  height: 20px;
+  background: #223A4C;
+  border: none;
+  color: #ffffffa9;
+  text-transform: none;
+
+}
+#all-games-form{
+  padding: 10px;
+  width: 800px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+#search-games-all:focus {
+  outline: none;
+}
+
+.hide-search{
+  display: none;
+}
+
+#search-games-all::-webkit-input-placeholder{
+  color: #fff;
+  opacity: 0.6;
+}
+#search-games-all::-moz-placeholder{
+  color: #fff;
+  opacity: 0.6;
+}
+.hovered-block-all-games{
+  padding: 5px 12px 0 12px;
+  width: 340px;
+  position: absolute;
+  left: 99%;
+  top: -5%;
+  cursor: default;
+  user-select: none;
+
+}
+.lastAll{
+  padding: 5px 12px 0 12px;
+  width: 340px;
+  position: absolute;
+  left: 99%;
+  top:-330% ;
+  cursor: default;
+  user-select: none;
+
+}
+.lastAllArrow{
+  background: url('../images/arrow-left.png') no-repeat top;
+  position: absolute;
+  bottom: 50px;
+  background-position: left;
+    left: 5px;
+  width: 7px;
+    height: 15px;
+}
+.hover-arrow-left{
+  background: url('../images/arrow-left.png') no-repeat top;
+  position: absolute;
+  top: 25px;
+  background-position: left;
+    left: 5px;
+  width: 7px;
+    height: 15px;
+}
+
+
+.hover-visible-block{
+  width: 300px;
+  height: 250px;
+  background-color: #fff;
+  
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+
+  
+}
+.img-hover{
+  width: 300px; /* Задайте ширину и высоту контейнера под ваши изображения */
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  left: 50%;
+  transform: translate(-50%);
+}
+.img-hover img {
+  position: absolute;
+  width: 100%;
+  
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.img-hover img:first-child {
+  opacity: 1;
+}
+.date-hover{
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+.name-hover{
+  font-size: 16px;
+  
+}
+.metki-hover p{
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.metki-block span{
+  font-size: 12px;
+  padding: 3px 3px;
+  border-radius: 2px;
+  background-color: #96a3ae;
+}
+
+
+.date-all-games-media{
+  display: none;
+}
+/* all games end */

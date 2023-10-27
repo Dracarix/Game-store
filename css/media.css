@@ -357,6 +357,38 @@
             display: flex;
         }
     }
+    .vidno{
+        display: none;
+    }
+    .date-all-games-media{
+        display: block;
+        color: #15b1ff;
+  opacity: 0.6;
+  font-size: 12px;
+    }
+    .date-all-games{
+        display: none;
+    }
+    
+    .search-games-all li{
+        height: 70px;
+        width: 95vw;
+    }
+    .search-games-all{
+        left: 50%;
+        position: relative;
+        transform: translate(-50%);
+    }
+    #all-games-form{
+        width: 90vw;
+    }
+    #search-games-all{
+        width: 90vw;
+    }
+    .search-games-all li .all-games-href img{
+        height: auto;
+        max-width: 100%;
+      }
 }
 @media (max-width: 830px){
     .first-2-otsek1{
@@ -501,6 +533,9 @@ footer{
     }
     .navigationnie-knopki .navigationnie-ssilki{
         width: 95%;
+    }
+    .search-games-all li .all-games-href{
+        font-size: 10px;
     }
 
 }
@@ -702,14 +737,22 @@ footer{
     .first-2-otsek{
         width: 300px;
     }
+    .net-bolshe-igr p{
+        font-size: calc(10px + 1vmin);
+    }
 } 
+@media (max-width: 380px){
+    #all-games-form{
+        padding: 5px;
+    }
+}
 @media (max-width: 340px){
     .tegi-on-media .tegi-category{
         width: 260px;
     }
-}
-
-@media (max-width: 340px){
+    .first-2-otsek{
+        width: 300px;
+    }
     .img-conteiner img{
         margin-top: 10px;
     }
@@ -726,8 +769,5 @@ footer{
         width: 290px;
     }
 }
-@media (max-width: 340px){
-    .first-2-otsek{
-        width: 300px;
-    }
-}
+
+
