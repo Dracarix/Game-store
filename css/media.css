@@ -243,12 +243,14 @@
     }
     .baner-media{
         display: block;
+        z-index: 2;
     }
     .navigationnie-knopki{
         position: relative;
         display: flex;
         flex-direction: column;
         max-width: 98%vw;
+        overflow: visible;
     }
     .navigationnie-knopki .navigationnie-ssilki{
         background:linear-gradient(to right, #3A6698, #0F216E) ;
@@ -389,6 +391,29 @@
         height: auto;
         max-width: 100%;
       }
+
+      .search-box {
+        z-index: 50;
+        width: 90vw;
+        left: 50%;
+        transform: translate(-50%);
+        top: 97%;
+    }
+    .search-list {
+        width: 93%;
+        overflow: hidden;
+    }
+    .search-list-link {
+    
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .search-list-link span{
+        display: inline-block;
+    }
+   
+
 }
 @media (max-width: 830px){
     .first-2-otsek1{

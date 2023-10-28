@@ -306,7 +306,7 @@ header .logo img{
   z-index: 3;
   align-items: center;
   border-radius: 2px;
-  overflow: hidden;
+
   background: linear-gradient(to right, #3A6698 , #0F216E);
   user-select: none;
 
@@ -448,7 +448,45 @@ header .logo img{
   border: 1px solid #5699c0;
   border-radius: 2px;
   padding: 0 0 0 20px;
-  
+  text-transform: none;
+}
+.search-box {
+  position: absolute;
+  background:#3D4450 ;
+  box-shadow: 0px 0px 12px;
+  left: 12%;
+  top: 60%;
+  z-index:4;
+  padding: 0;
+}
+.search-list {
+  display: flex;
+  width: 412px;
+  height: 45px;
+  padding: 4px 8px;
+}
+.search-list-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0 0 0 0;
+}
+.search-list img{
+  height: 100%;
+  margin-right: 8px;
+}
+.search-content {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #fff;
+  font-size: 12px;
+}
+.search-price {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 .navigationnie-knopki #searchform #store_nav_search_term::-webkit-input-placeholder{
     color: #000;
@@ -1420,7 +1458,7 @@ footer .contact{
   
 }
 .img-hover{
-  width: 300px; /* Задайте ширину и высоту контейнера под ваши изображения */
+  width: 300px;
   height: 150px;
   overflow: hidden;
   position: relative;

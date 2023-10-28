@@ -244,3 +244,28 @@ window.addEventListener('resize', checkWindowWidth);
       }
     
   })
+
+  const searchGames = document.getElementById('store_nav_search_term');
+  const searchList = document.querySelectorAll('.search-list')
+
+  searchGames.oninput = function () {
+    const valueList = this.value.trim();
+
+    if (valueList) {
+        searchList.forEach((elem) => {
+            if (elem.innerText.toLowerCase().includes(valueList.toLowerCase())) {
+                elem.classList.remove('hide-search');
+            } else {
+                elem.classList.add('hide-search');
+            };
+        });
+    } else {
+        searchList.forEach((elem) => {
+            elem.classList.add('hide-search');
+        });
+    };
+};
+  
+
+      
+      
