@@ -246,7 +246,7 @@ window.addEventListener('resize', checkWindowWidth);
   })
 
   const searchGames = document.getElementById('store_nav_search_term');
-  const searchList = document.querySelectorAll('.search-list')
+  const searchList = document.querySelectorAll('.search-list');
 
   searchGames.oninput = function () {
     const valueList = this.value.trim();
@@ -258,6 +258,7 @@ window.addEventListener('resize', checkWindowWidth);
             } else {
                 elem.classList.add('hide-search');
             };
+
         });
     } else {
         searchList.forEach((elem) => {
@@ -265,7 +266,23 @@ window.addEventListener('resize', checkWindowWidth);
         });
     };
 };
-  
+
+searchList.forEach((elem) => {
+    elem.addEventListener('mouseover', () => {
+        requestAnimationFrame(() => {
+            elem.classList.add('hovered');
+        });
+        
+    });
+
+    elem.addEventListener('mouseout', () => {
+        requestAnimationFrame(() => {
+            elem.classList.remove('hovered');
+        });
+        
+    });
+});
+
 
       
       

@@ -92,7 +92,7 @@
       Категории
     
     </div>
-    <div class="drop-down-block-navigation-media " id="dropDown">
+    <div class="drop-down-block-navigation-media animate-slide-up" id="dropDown">
       <div class="special-section">
           <div class="mini-link">
             <a href="">бесплатно</a>
@@ -804,6 +804,22 @@ window.addEventListener('resize', checkWindowWidth);
         });
     };
 };
+
+searchList.forEach((elem) => {
+    elem.addEventListener('mouseover', () => {
+        requestAnimationFrame(() => {
+            elem.classList.add('hovered');
+        });
+        
+    });
+
+    elem.addEventListener('mouseout', () => {
+        requestAnimationFrame(() => {
+            elem.classList.remove('hovered');
+        });
+        
+    });
+});
     </script>
     <footer>
         <div class="reglament">
