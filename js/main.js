@@ -299,11 +299,14 @@ document.addEventListener("DOMContentLoaded", function() {
         function handleMediaChange(event) {
             if(event.matches){
                 miniCart.style.display = 'none'
+                console.log('1')
             }else{
                 if(cartLength <= 0){
                     miniCart.style.display = 'none';
+                    console.log('2')
                 }else{
                     miniCart.style.display = 'block' ;
+                    console.log('3')
                 }
             }
                   

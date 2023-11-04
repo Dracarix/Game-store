@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function loadGoods() {
-    // Загружаем товары на страницу
     fetch('../js/games.json')
         .then((response) => response.json())
         .then((data) => {
@@ -35,7 +34,6 @@ function loadGoods() {
 
 
 function addToCart() {
-    // Добавляем товар в корзину
     const articul = this.getAttribute('data-art');
     if (cart[articul] !== undefined) {
         
@@ -55,7 +53,6 @@ function checkCart () {
 }
 
 function showCart(){
-        // Загружаем товары на страницу
         fetch('../js/games.json')
             .then((response) => response.json())
             .then((data) => {
