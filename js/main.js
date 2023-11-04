@@ -284,5 +284,38 @@ searchList.forEach((elem) => {
 });
 
 
+const miniCart = document.querySelector('.mini-cart');
+document.addEventListener("DOMContentLoaded", function() {
+        
+        const kolvo = document.getElementById('kolvo')
+        var cartData = localStorage.getItem('cart');
+        var cartArr = JSON.parse(cartData);
+        var cartKeys = Object.keys(cartArr);
+        var cartLength = cartKeys.length;
+        kolvo.textContent = cartLength;
+        
+
+        var mediaQueryList = window.matchMedia("(max-width: 924px)");
+        function handleMediaChange(event) {
+            if(event.matches){
+                miniCart.style.display = 'none'
+            }else{
+                if(cartLength <= 0){
+                    miniCart.style.display = 'none';
+                }else{
+                    miniCart.style.display = 'block' ;
+                }
+            }
+                  
+                
+        }
+
+        mediaQueryList.addEventListener("change", handleMediaChange);
+        handleMediaChange(mediaQueryList);
+
+        
+        
+});
+
       
       

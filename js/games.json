@@ -1,0 +1,75 @@
+{
+    "1":{
+        "name": "Demonologist",
+        "image": "../images/mini-logo-games/demonologist.jpg",
+        "price": "600",
+        "link": "../shop-link/sDemonologist.html"
+    },
+    "2":{
+        "name": "COCOON",
+        "image": "../images/mini-logo-games/COCOON.jpg",
+        "price": "950",
+        "link": "../shop-link/sCOCOON.html"
+    },
+    "3":{
+        "name": "Escape the Backrooms",
+        "image": "../images/mini-logo-games/EscapeBRoom.jpg",
+        "price": "256",
+        "link": "../shop-link/sEscapeTBackrooms.html"
+
+    },
+    "4":{
+        "name": "Noch",
+        "image": "../images/mini-logo-games/noch.jpg",
+        "price": "346",
+        "link": "../shop-link/sNoch.html"
+    },
+    "5":{
+        "name": "Smalland",
+        "image": "../images/mini-logo-games/Smalland.jpg",
+        "price": "1100",
+        "link": "../shop-link/sSmalland.html"
+    },
+    "6":{
+        "name": "Stray",
+        "image": "../images/mini-logo-games/Stray.jpg",
+        "price": "930",
+        "link": "../shop-link/sstray.html"
+    },
+    "7":{
+        "name": "Tagline",
+        "image": "../images/mini-logo-games/Tagline.jpg",
+        "price": "650",
+        "link": "../shop-link/sTAGLINE.html"
+    },
+    "8":{
+        "name": "Terraria",
+        "image": "../images/mini-logo-games/terraria.jpg",
+        "price": "300",
+        "link": "../shop-link/sterraria.html"
+    },
+    "9":{
+        "name": "Tiny Bunny",
+        "image": "../images/mini-logo-games/TinyBunny.jpg",
+        "price": "349",
+        "link": "../shop-link/sTinyBunny.html"
+    },
+    "10":{
+        "name": "Thief Simulator 2",
+        "image": "../images/mini-logo-games/TS2.jpg",
+        "price": "639",
+        "link": "../shop-link/sTS2.html"
+    },
+    "11":{
+        "name": "Wargroove 2",
+        "image": "../images/mini-logo-games/wargloove2.jpg",
+        "price": "568",
+        "link": "../shop-link/sWargroove2.html"
+    },
+    "12":{
+        "name": "Warhammer 40,000: Inquisitor",
+        "image": "../images/mini-logo-games/Wh-inqusitor.jpg",
+        "price": "1100",
+        "link": "../shop-link/sWh-Inquisitor.html"
+    }
+}

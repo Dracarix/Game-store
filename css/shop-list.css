@@ -374,9 +374,13 @@
     
 }
 
-.buy-btn button{
+.buy-btn a{
     height: 30px;
     width: 100px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: linear-gradient(to right, #0ece0e,#0ec50e);
     border: none;
     border-radius: 3px;
@@ -384,7 +388,7 @@
     opacity: 0.9;
     transition: opacity 0.4s ease-in-out;
 }
-.buy-btn button:hover {
+.buy-btn a:hover {
     opacity: 1;
 }
 
@@ -405,4 +409,8 @@
 } */
 .tegi-on-media{
     display: none;
+}
+.add-cart-shop{
+    user-select: none;
+    cursor: pointer;
 }

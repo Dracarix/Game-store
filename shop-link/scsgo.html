@@ -149,6 +149,13 @@
         <img src="../images/search.png" alt="search">
       </a>
   </form>
+  <div class="mini-cart">
+    <a href="../basket.html">Корзина</a>
+  
+    <div class="skolko-v-corzine">
+      <span id="kolvo">0</span>
+    </div>
+  </div>
   <ul class="search-box">
     <li class="search-list hide-search">
       <a class="search-list-link" href="../shop-link/scsgo.html">
@@ -629,7 +636,7 @@
             <div class="buy-menu">
                 <h1>Сыграть в Counter-Strike 2</h1>
                 <div class="buy-btn">
-                    <span>Бесплатно</span><button>Приобрести</button>
+                    <span>Бесплатно</span><a href="#">Приобрести</a>
                 </div>
                 
                 <div class="platforms-inShop">
@@ -648,7 +655,7 @@
                         <div class="platform-img linux"><img src="../images/linux.png" alt=""></div>
                     </div>
                     <div class="buy-btn-media">
-                        <button>Бесплатно</button>
+                        <a href="">Бесплатно</a>
                     </div>
                 </div>
                 
@@ -719,166 +726,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/js/splide-extension-video.min.js"></script>
     <script src="../js/slide.js"></script> 
 
-    <script>
-        function openTabmedia(tabId) {
-            // Скрыть все вкладки
-            const tabsMedia = document.querySelectorAll('.tab-content-media');
-            tabsMedia.forEach(function(tab) {
-                tab.style.display = 'none';
-            });
-            // Отобразить выбранную вкладку
-            document.getElementById(tabId).style.display = 'block';  
-        };
-        const btnTabmedia = document.querySelectorAll('.tab-button-media');
-        btnTabmedia.forEach(function(elem){
-            elem.addEventListener('click',()=>{
-                const activeTabmedia = document.querySelector('.tab-button-media.active');
-                if (activeTabmedia) {
-                    activeTabmedia.classList.remove('active');
-                }
-
-                
-                requestAnimationFrame(() => {
-                    elem.classList.add('active');
-                    
-                });
-            })
-        });
-        const fullScrean = document.getElementById('menu_toggle');
-        const Header = document.getElementById('header');
-        const checkboxed = document.getElementById('checkboxed');
-        const addClassfromHeader = window.matchMedia("(max-width: 715px)");
-
-        function kakjeyaustal() {
-            if (addClassfromHeader.matches) {
-                Header.classList.add('ne-checked');
-            } else {
-                Header.classList.remove('ne-checked');
-            }
-        }
-        kakjeyaustal();
-        addClassfromHeader.addListener(kakjeyaustal);
-
-        fullScrean.addEventListener("change", function() {
-            if (fullScrean.checked) {
-                Header.classList.add('ne-checked');
-            } else {
-                Header.classList.remove('ne-checked');
-            }
-        });
-
-        const category = document.querySelector('#category-drop-block');
-const downBlock = document.querySelector('.drop-down-block-navigation');
-
-function handleCategoryMouseEnter() {
-    downBlock.classList.add('droppeds');
-    if (downBlock.classList.contains('lifts')) {
-        downBlock.classList.remove('lifts');
-    }
-}
-
-function handleCategoryMouseOut() {
-    if (downBlock.classList.contains('droppeds')) {
-        downBlock.classList.remove('droppeds');
-    }
-    downBlock.classList.add('lifts');
-}
-
-function handleDownBlockMouseOver() {
-    downBlock.classList.add('droppeds');
-    if (downBlock.classList.contains('lifts')) {
-        downBlock.classList.remove('lifts');
-    }
-}
-
-function handleDownBlockMouseOut() {
-    if (downBlock.classList.contains('droppeds')) {
-        downBlock.classList.remove('droppeds');
-    }
-    downBlock.classList.add('lifts');
-}
-
-function addEventListeners() {
-    category.addEventListener('mouseenter', handleCategoryMouseEnter);
-    category.addEventListener('mouseout', handleCategoryMouseOut);
-    downBlock.addEventListener('mouseover', handleDownBlockMouseOver);
-    downBlock.addEventListener('mouseout', handleDownBlockMouseOut);
-}
-
-function removeEventListeners() {
-    category.removeEventListener('mouseenter', handleCategoryMouseEnter);
-    category.removeEventListener('mouseout', handleCategoryMouseOut);
-    downBlock.removeEventListener('mouseover', handleDownBlockMouseOver);
-    downBlock.removeEventListener('mouseout', handleDownBlockMouseOut);
-}
-
-function checkWindowWidth() {
-    if (window.innerWidth >= 924 && window.innerWidth <= 2000) {
-        addEventListeners();
-    } else {
-        removeEventListeners();
-    }
-}
-
-// Вызовите функцию checkWindowWidth, чтобы установить обработчики событий
-checkWindowWidth();
-
-// Добавьте обработчик события изменения размера окна
-window.addEventListener('resize', checkWindowWidth);
-
-
-
-  const downBlockMedia = document.querySelector('#dropDown'); 
-
-
-  category.addEventListener('click',() =>{
-    if(downBlockMedia.classList.contains("animate-slide-up")){
-        downBlockMedia.classList.add("animate-slide-down");
-        downBlockMedia.classList.remove("animate-slide-up");
-    }else {
-        downBlockMedia.classList.remove("animate-slide-down");
-        downBlockMedia.classList.add("animate-slide-up");
-      }
-    
-  });
-
-const searchGames = document.getElementById('store_nav_search_term');
-const searchList = document.querySelectorAll('.search-list')
-
-searchGames.oninput = function () {
-  const valueList = this.value.trim();
-
-  if (valueList) {
-      searchList.forEach((elem) => {
-          if (elem.innerText.toLowerCase().includes(valueList.toLowerCase())) {
-              elem.classList.remove('hide-search');
-          } else {
-              elem.classList.add('hide-search');
-          };
-      });
-  } else {
-      searchList.forEach((elem) => {
-          elem.classList.add('hide-search');
-      });
-  };
-};
-
-searchList.forEach((elem) => {
-    elem.addEventListener('mouseover', () => {
-        requestAnimationFrame(() => {
-            elem.classList.add('hovered');
-        });
-        
-    });
-
-    elem.addEventListener('mouseout', () => {
-        requestAnimationFrame(() => {
-            elem.classList.remove('hovered');
-        });
-        
-    });
-});
-    </script>
+    <script src="../js/shop.js"></script>
     <footer>
         <div class="reglament">
             <p>

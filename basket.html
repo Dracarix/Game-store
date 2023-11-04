@@ -375,166 +375,40 @@
     
     <main class="basket">
         <div class="path_game">
-            <a href="../all-game.html">Все игры</a>
+            <a href="../all-game.html">Главная страница</a>
             <p>></p>
-            <a href="">Стратегии</a>
+            <a href="">Корзина</a>
                 
         </div> 
         <h5>ВАША КОРЗИНА</h5>
-        <ul></ul>
+        <ul id="cart">
+
+        </ul>
         <div class="checkout_content">
             <div class="cart-summa">
                 Общая сумма <sup>0</sup>
             </div>
             
-            <div class="cart-all-prise">
-                <span>0</span>руб.
+            <div class="cart-all-prise" id="totalPrice">
+                <span>Нет ничего</span>
+                
             </div>
+            
         </div>
+        
         <div class="cart-buy-btn">
-            <button>Купить</button>
+          
+            <a>Купить</a>
 
         </div>
         <div class="info-cart">
             Все цены указаны с учетом НДС (где применимо)
+            <button id="deleteFullCart"">Очистить корзину</button>
         </div>
-        <input type="text" name="search" id="cart-search" autocomplete="off" placeholder="поиск по корзине">
-        <ul class="main-cart-search">
-            
-              
-              <li class="search-cart ">
-                  <img src="../images/mini-logo-games/demonologist.jpg" alt="">
-                  <div class="search-content-cart">
-                    <a>Demonologist</a>
-                    <div class="search-price">
-                      600 руб.
-                    </div>
-                  </div>
-                  <button class="add-cart">
-                    +
-                  </button>
-              </li>
-              <li class="search-cart ">
-                  <img src="../images/mini-logo-games/COCOON.jpg" alt="">
-                  <div class="search-content-cart">
-                    <a>COCOON</a>
-                    <div class="search-price">
-                      950 руб.
-                    </div>
-                  </div>
-              </li>
-              <li class="search-cart ">
-                
-                  <img src="../images/mini-logo-games/EscapeBRoom.jpg" alt="">
-                  <div class="search-content-cart">
-                    <a>Escape the Backrooms</a>
-                    <div class="search-price">
-                      256 руб.
-                    </div>
-                  </div>
-        
-              </li>
-              <li class="search-cart ">
-                
-                  <img src="../images/mini-logo-games/noch.jpg" alt="">
-                  <div class="search-content-cart">
-                    <a>Noch</a>
-                    <div class="search-price">
-                      346 руб.
-                    </div>
-                  </div>
-        
-              </li>
-              <li class="search-cart ">
-                
-                  <img src="../images/mini-logo-games/Smalland.jpg" alt="">
-                  <div class="search-content-cart">
-                    <a>Smalland</a>
-                    <div class="search-price">
-                      1100 руб.
-                    </div>
-                  </div>
-        
-              </li>
-              <li class="search-cart ">
-                
-                  <img src="../images/mini-logo-games/Stray.jpg" alt="">
-                  <div class="search-content-cart">
-                    <a>Stray</a>
-                    <div class="search-price">
-                      930 руб.
-                    </div>
-                  </div>
-        
-              </li>
-              <li class="search-cart ">
-                
-                  <img src="../images/mini-logo-games/Tagline.jpg" alt="">
-                  <div class="search-content-cart">
-                    <a>Tagline</a>
-                    <div class="search-price">
-                      650 руб.
-                    </div>
-                  </div>
-        
-              </li>
-              <li class="search-cart ">
-                
-                  <img src="../images/mini-logo-games/terraria.jpg" alt="">
-                  <div class="search-content-cart">
-                    <a>Terraria</a>
-                    <div class="search-price">
-                      300 руб.
-                    </div>
-                  </div>
-        
-              </li>
-              <li class="search-cart ">
-                
-                  <img src="../images/mini-logo-games/TinyBunny.jpg" alt="">
-                  <div class="search-content-cart">
-                    <a>Tiny Bunny</a>
-                    <div class="search-price">
-                      349 руб.
-                    </div>
-                  </div>
-        
-              </li>
-              <li class="search-cart ">
-                
-                  <img src="../images/mini-logo-games/TS2.jpg" alt="">
-                  <div class="search-content-cart">
-                    <a>Thief Simulator 2</a>
-                    <div class="search-price">
-                      639 руб.
-                    </div>
-                  </div>
-        
-              </li>
-              <li class="search-cart ">
-                
-                  <img src="../images/mini-logo-games/wargloove2.jpg" alt="">
-                  <div class="search-content-cart">
-                    <a>Wargroove 2</a>
-                    <div class="search-price">
-                      568 руб.
-                    </div>
-                  </div>
-        
-              </li>
-              <li class="search-cart ">
-                
-                  <img src="../images/mini-logo-games/Wh-inqusitor.jpg" alt="">
-                  <div class="search-content-cart">
-                    <a>Warhammer 40,000: Inquisitor</a>
-                    <div class="search-price">
-                      1100 руб.
-                    </div>
-                  </div>
-        
-              </li>
-
-        </ul>
+        <form action="" id="cart-games-form">
+          <input type="text" id="search-input" autocomplete="off" placeholder="Поиск игр">
+      </form>
+        <ul class="main-cart-search" id="search"></ul>
     
     
        
@@ -561,5 +435,6 @@
   
         </div>
       </footer>
+      <script src="../js/cart.js"></script>
 </body>
 </html>
