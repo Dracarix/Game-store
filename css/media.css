@@ -79,6 +79,12 @@
     .games-content{
         display: none;
     }
+    .scale{
+        transform: scale(1.00 , 1.1);
+        z-index: 2;
+        box-shadow: 1px 1px 10px #000;
+        transition: all 0.2s;
+      }
     .shop-list{
         max-width: 98vw;
     }
@@ -235,6 +241,13 @@
     }
     .logo-game{
         width: 60vw;
+    }
+    .second_category,
+    .first_category{
+        display: none;
+    }
+    #media-carousel{
+        display: block;
     }
 }
 @media (max-width: 924px){
@@ -540,6 +553,30 @@ footer{
     .subtitle-column{
         width: 80px;
     }
+    .tegname-category{
+        display: none;
+    }
+    .opisanie-category{
+        display: none;
+    }
+    #media-carousel .price-category{
+        position: relative;
+        border-radius: 5px;
+    }
+    .cart-category-info{
+        height: 70px;
+    }
+    .second_img{
+        display: block;
+        height: 200px;
+    }
+    .first_img{
+        display: none;
+    }
+    #media-carousel .splide__slide{
+        flex-direction: column;
+        height: 400px;
+    }
 }
 @media (max-width: 600px){
     .tab-button-media{
@@ -564,7 +601,9 @@ footer{
     .search-games-all li .all-games-href{
         font-size: 10px;
     }
-
+    #media-carousel .splide__slide{
+        height: 350px;
+    }
 }
 @media (max-width: 480px){
 
@@ -580,6 +619,9 @@ footer{
         aspect-ratio: 15/8;
         
         
+    }
+    #list-category .platform-category{
+        display: none;
     }
     .buy-btn-media{
         background-color: #000;
@@ -742,6 +784,9 @@ footer{
     }
     .basket h5{
         margin-top: 0px;
+    }
+    #media-carousel .splide__slide{
+        height: 270px;
     }
 }
 @media (max-width: 430px){

@@ -13,14 +13,16 @@ function loadGoods() {
             const searchContainer = document.getElementById('search');
             let out = '';
             for (const key in data) {
-                out += '<li class="search-cart">';
-                    out += `<img src="${data[key].image}">`;
-                    out += `<div class="search-content-cart">`
-                        out += `<a href="${data[key].link}">${data[key].name}</a>`;
-                        out += `<p> ${data[key].price} руб.</p>`;
-                    out += `</div>`
-                    out += `<button class="add-cart" data-art="${key}">+</button>`;
-                out += '</li>';
+                if(data[key].price && data[key].price !== ""){
+                    out += '<li class="search-cart">';
+                        out += `<img src="${data[key].image}">`;
+                        out += `<div class="search-content-cart">`
+                            out += `<a href="${data[key].link}">${data[key].name}</a>`;
+                            out += `<p> ${data[key].price} руб.</p>`;
+                        out += `</div>`
+                        out += `<button class="add-cart" data-art="${key}">+</button>`;
+                    out += '</li>';
+                }
             }
             searchContainer.innerHTML = out;
             

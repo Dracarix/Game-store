@@ -35,7 +35,7 @@ function kakjeyaustal() {
     }
 }
 kakjeyaustal();
-addClassfromHeader.addListener(kakjeyaustal);
+addClassfromHeader.addEventListener('change', kakjeyaustal);
 
 fullScrean.addEventListener("change", function() {
     if (fullScrean.checked) {

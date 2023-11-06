@@ -1,75 +1,194 @@
 {
-    "1":{
+    "1": {
         "name": "Demonologist",
         "image": "../images/mini-logo-games/demonologist.jpg",
+        "image_mini": "../images/20 na 9/Demonologist.jpg",
+        "video": "../images/GAMES/Demonologist/Demonologist-video-1.webm",
         "price": "600",
-        "link": "../shop-link/sDemonologist.html"
+        "windows":true,
+        "macOS": false,
+        "linux":false,
+        "link": "../shop-link/sDemonologist.html",
+        "categories": ["horror", "cooperative", "multipleyer", "3d","singleplayer" ]
     },
-    "2":{
+    "2": {
         "name": "COCOON",
         "image": "../images/mini-logo-games/COCOON.jpg",
+        "image_mini": "../images/20 na 9/COCOON.jpg",
+        "video": "../images/GAMES/COCOON/COCOON-video-1.webm",
         "price": "950",
-        "link": "../shop-link/sCOCOON.html"
+        "windows":true,
+        "macOS": false,
+        "linux":false,
+        "link": "../shop-link/sCOCOON.html",
+        "categories": ["pazzle", "singleplayer",  "adventures", "3d", "indie"]
     },
-    "3":{
+    "3": {
         "name": "Escape the Backrooms",
         "image": "../images/mini-logo-games/EscapeBRoom.jpg",
+        "image_mini": "../images/20 na 9/EscapetheBackrooms.jpg",
+        "video": "../images/GAMES/EscapeBrooms/EscapeTBackrooms-video1.webm",
         "price": "256",
-        "link": "../shop-link/sEscapeTBackrooms.html"
-
+        "windows":true,
+        "macOS": false,
+        "linux":false,
+        "link": "../shop-link/sEscapeTBackrooms.html",
+        "categories": ["horror", "cooperative", "multipleyer", "adventures", "3d", "indie","singleplayer"]
     },
-    "4":{
+    "4": {
         "name": "Noch",
         "image": "../images/mini-logo-games/noch.jpg",
+        "image_mini": "../images/20 na 9/Noch.jpg",
+        "video": "../images/GAMES/Noch/Noch-video-1.webm",
         "price": "346",
-        "link": "../shop-link/sNoch.html"
+        "windows":true,
+        "macOS": false,
+        "linux":false,
+        "link": "../shop-link/sNoch.html",
+        "categories": ["horror", "cooperative", "multipleyer", "sandbox", "singleplayer", "pazzle", "3d", "adventures"]
     },
-    "5":{
+    "5": {
         "name": "Smalland",
         "image": "../images/mini-logo-games/Smalland.jpg",
+        "image_mini": "../images/20 na 9/Smalland.jpg",
+        "video": "../images/GAMES/Smalland/Smalland-video-1.webm",
         "price": "1100",
-        "link": "../shop-link/sSmalland.html"
+        "windows":true,
+        "macOS": false,
+        "linux":false,
+        "link": "../shop-link/sSmalland.html",
+        "categories": ["adventures", "cooperative", "multipleyer", "sandbox", "singleplayer"]
     },
-    "6":{
+    "6": {
         "name": "Stray",
         "image": "../images/mini-logo-games/Stray.jpg",
+        "image_mini": "../images/20 na 9/Stray.jpg",
+        "video": "../images/GAMES/Stray/stray-video1.webm",
         "price": "930",
-        "link": "../shop-link/sstray.html"
+        "windows":true,
+        "macOS": false,
+        "linux":false,
+        "link": "../shop-link/sstray.html",
+        "categories": ["singleplayer", "horror", "puzzle", "adventures", "indie","action"]
     },
-    "7":{
+    "7": {
         "name": "Tagline",
         "image": "../images/mini-logo-games/Tagline.jpg",
+        "image_mini": "../images/20 na 9/TAGLINE.jpg",
+        "video": "../images/GAMES/TAGLINE/TAGLINE-video-1.webm",
         "price": "650",
-        "link": "../shop-link/sTAGLINE.html"
+        "windows":true,
+        "macOS": true,
+        "linux":false,
+        "link": "../shop-link/sTAGLINE.html",
+        "categories": ["3d", "adventures",  "shooter", "action","macOS"]
     },
-    "8":{
+    "8": {
         "name": "Terraria",
-        "image": "../images/mini-logo-games/terraria.jpg",
+        "image": "../images/GAMES/terraria/terraria1.jpg",
+        "image_mini": "../images/20 na 9/terraria.jpg",
+        "video": "../images/GAMES/terraria/terraria-video.webm",
         "price": "300",
-        "link": "../shop-link/sterraria.html"
+        "windows":true,
+        "macOS": true,
+        "linux":true,
+        "link": "../shop-link/sterraria.html",
+        "categories": ["cooperative", "multipleyer","macOS","linux", "sandbox", "indie", "adventures","action" ,"singleplayer"]
     },
-    "9":{
+    "9": {
         "name": "Tiny Bunny",
         "image": "../images/mini-logo-games/TinyBunny.jpg",
+        "image_mini": "../images/20 na 9/Tiny Bunny.jpg",
+        "video": "../images/GAMES/Tiny Bunny/TinyBunny-video-1.webm",
         "price": "349",
-        "link": "../shop-link/sTinyBunny.html"
+        "windows":true,
+        "macOS": false,
+        "linux":false,
+        "link": "../shop-link/sTinyBunny.html",
+        "categories": ["adventures", "horror", "indie","singleplayer"]
     },
-    "10":{
+    "10": {
         "name": "Thief Simulator 2",
-        "image": "../images/mini-logo-games/TS2.jpg",
+        "image": "../images/20 na 9/Team Fortress 2.jpg",
+        "image_mini": "../images/20 na 9/TS2.jpg",
+        "video": "../images/GAMES/Thief Simulator 2/TS2-video-1.webm",
         "price": "639",
-        "link": "../shop-link/sTS2.html"
+        "windows":true,
+        "macOS": false,
+        "linux":false,
+        "link": "../shop-link/sTS2.html",
+        "categories": ["simulator", "singleplayer", "action","adventures","indie"]
     },
-    "11":{
+    "11": {
         "name": "Wargroove 2",
         "image": "../images/mini-logo-games/wargloove2.jpg",
+        "image_mini": "../images/20 na 9/Wargroove 2.jpg",
+        "video": "../images/GAMES/Wargroove 2/Wargroove2-video-1.webm",
         "price": "568",
-        "link": "../shop-link/sWargroove2.html"
+        "windows":true,
+        "macOS": false,
+        "linux":false,
+        "link": "../shop-link/sWargroove2.html",
+        "categories": ["cooperative", "multipleyer", "singleplayer", "indie","puzzle", "strategy"]
     },
-    "12":{
+    "12": {
         "name": "Warhammer 40,000: Inquisitor",
         "image": "../images/mini-logo-games/Wh-inqusitor.jpg",
+        "image_mini": "../images/20 na 9/WH Inquisitor.jpg",
+        "video": "../images/GAMES/WH Inquisitor/WH Inquisitor-video-1.webm",
         "price": "1100",
-        "link": "../shop-link/sWh-Inquisitor.html"
+        "windows":true,
+        "macOS": false,
+        "linux":false,
+        "link": "../shop-link/sWh-Inquisitor.html",
+        "categories": ["indie", "adventures", "cooperative", "action"]
+    },
+    "13": {
+        "name": "Team Fortress 2",
+        "image": "../images/mini-logo-games/TF2.jpg",
+        "image_mini": "../images/20 na 9/Team Fortress 2.jpg",
+        "video": "../images/GAMES/TF2/TF2-video-1.webm",
+        "FreeOrAnons": "Бесплатно",
+        "windows":true,
+        "macOS": false,
+        "linux":false,
+        "link": "../shop-link/sTF-2.html",
+        "categories": ["multipleyer", "shooter", "action","cooperative","free"]
+    },
+    "14": {
+        "name": "Dota 2",
+        "image": "../images/mini-logo-games/dota2.jpg",
+        "image_mini": "../images/20 na 9/dota2.jpg",
+        "video": "../images/GAMES/dota2/dota2-video.webm",
+        "FreeOrAnons": "Бесплатно",
+        "windows":true,
+        "macOS": true,
+        "linux":true,
+        "link": "../shop-link/sdota2.html",
+        "categories": ["multipleyer", "strategy", "action","cooperative","linux","simulator","free","macOS"]
+    },
+    "15": {
+        "name": "Counter-Strike 2",
+        "image": "../images/mini-logo-games/csgo.jpg",
+        "image_mini": "../images/20 na 9/cs.jpg",
+        "video": "../images/GAMES/CSGO/cs-video.webm",
+        "FreeOrAnons": "Бесплатно",
+        "windows":true,
+        "macOS": true,
+        "linux":true,
+        "link": "../shop-link/scsgo.html",
+        "categories": ["multipleyer", "shooter", "action","cooperative","linux","3d","strategy","free","macOS"]
+    },
+    "16": {
+        "name": "Warhammer 40,000: Space Marine 2",
+        "image": "../images/mini-logo-games/Wh-SM2.jpg",
+        "image_mini": "../images/20 na 9/warhammer space marine 2.jpg",
+        "video": "../images/GAMES/WarhammerSM2/warhammerSM2-video1.webm",
+        "FreeOrAnons": "Анонсирован",
+        "windows":true,
+        "macOS": true,
+        "linux":false,
+        "link": "../shop-link/sWh-sm2.html",
+        "categories": ["singleplayer", "shooter", "action","3d","adventures","macOS"]
     }
 }
