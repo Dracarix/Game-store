@@ -183,32 +183,26 @@ document.addEventListener("DOMContentLoaded", function() {
         handleMediaChange(mediaQueryList);     
 });
 
-
+let cart = {};
 document.addEventListener('DOMContentLoaded',function(){
-    checkCart()
+    checkCart();
+    
 });
-function loadGoods() {
-    // Загружаем товары на страницу
-    fetch('../js/games.json')
-        .then((response) => response.json())
-        .then((data) => {
-            
-});
-};
 function addToCart() {
-    // Добавляем товар в корзину
     const articul = this.getAttribute('data-art');
-    if (cart[articul] !== undefined) {
-        
+    if (cart[articul] !== undefined) {     
     } else {
         cart[articul] = 1;
     }
     localStorage.setItem('cart' , JSON.stringify(cart));
+
+    
 };
 function checkCart () {
     if(localStorage.getItem('cart') !== null){
         cart = JSON.parse(localStorage.getItem('cart'));
     }
+    
 };
 const addCartLinkShop = document.querySelectorAll('a.add-cart-shop');
             addCartLinkShop.forEach((item) => {

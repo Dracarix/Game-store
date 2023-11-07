@@ -85,7 +85,7 @@
     },
     "8": {
         "name": "Terraria",
-        "image": "../images/GAMES/terraria/terraria1.jpg",
+        "image": "../images/mini-logo-games/terraria.jpg",
         "image_mini": "../images/20 na 9/terraria.jpg",
         "video": "../images/GAMES/terraria/terraria-video.webm",
         "price": "300",
@@ -109,8 +109,8 @@
     },
     "10": {
         "name": "Thief Simulator 2",
-        "image": "../images/20 na 9/Team Fortress 2.jpg",
-        "image_mini": "../images/20 na 9/TS2.jpg",
+        "image": "../images/mini-logo-games/TF2.jpg",
+        "image_mini": "../images/20 na 9/Team Fortress 2.jpg",
         "video": "../images/GAMES/Thief Simulator 2/TS2-video-1.webm",
         "price": "639",
         "windows":true,
