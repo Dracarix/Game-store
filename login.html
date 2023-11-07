@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/1style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <input type="checkbox"  id="menu_toggle">
+    <label for="menu_toggle" id="checkboxed"> &#9776;</label>
+<header id="header" >
+
+    <div class="logo">
+        <a href="index.html" >
+            <img src="images/logotip.png" alt="Логотип"/>
+        </a>
+        <a class="nazvanie"href="index.html">LEBEDKOV.COM</a>
+        
+    </div>
+    
+    <nav >
+      
+        <ul>
+            <li><a href="index.html">Магазин</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="">Войти / Зарегистрироваться </a></li>
+        </ul>
+    
+        
+      </nav>
+      <div class="media-footer">
+        
+        <div class="reglament">
+            <p>
+                © 2023 Lebedkov. Все права защищены.НДС включён во все цены, где он применим.
+            </p>
+        </div>
+        <div class="contact">
+            <span class="contacts">
+              Phone: +79962209041 
+              
+            </span><br>
+            <span class="contacts">
+              Email: lebedkov200002@gmail.com
+              
+            </span>
+            
+        </div>
+      </div>
+
+</header>
+
+<div class="header-checkbox">
+<div class="logo">
+  <a href="index.html" >
+      <img src="images/logotip.png" alt="Логотип"/>
+  </a>
+  
+</div>
+
+</div>
+
+    <div class="login-main">
+        <div class="log-page">
+            <h3>Войти</h3>
+            <form action="" id="login">
+                <span>ВВЕДИТЕ EMAIL</span>
+                <input type="text" name="" id="login-input">
+                <br>
+                <p>ПАРОЛЬ</p>
+                <div class="log-pass">
+                    <input type="password" id="pass-input">
+                    <label for="pass-checkbox" id="label-pass"><img src="images/noeye.svg" alt=""></label>
+                    <input type="checkbox" id="pass-checkbox">
+                </div>
+                
+                <button>Войти</button>
+
+                <a href="">У вас еще нет аккаунта?</a>
+            </form>
+        </div>
+        
+    </div>
+    <script>
+        const pass = document.getElementById('pass-input');
+        const labelCheckPass = document.getElementById('label-pass');
+        labelCheckPass.addEventListener('click', ()=>{
+            if(pass.type === 'password'){
+                pass.type = 'text';
+                labelCheckPass.style.backgroundImage = "url('images/eye.svg')";
+            }else{
+                pass.type = 'password';
+                labelCheckPass.style.backgroundImage = "url('images/noeye.svg')";
+            }
+        });
+
+
+        function openTabmedia(tabId) {
+    // Скрыть все вкладки
+    const tabsMedia = document.querySelectorAll('.tab-content-media');
+    tabsMedia.forEach(function(tab) {
+        tab.style.display = 'none';
+    });
+    // Отобразить выбранную вкладку
+    document.getElementById(tabId).style.display = 'block';  
+};
+const btnTabmedia = document.querySelectorAll('.tab-button-media');
+btnTabmedia.forEach(function(elem){
+    elem.addEventListener('click',()=>{
+        const activeTabmedia = document.querySelector('.tab-button-media.active');
+        if (activeTabmedia) {
+            activeTabmedia.classList.remove('active');
+        }
+
+        
+        requestAnimationFrame(() => {
+            elem.classList.add('active');
+            
+        });
+    })
+});
+const fullScrean = document.getElementById('menu_toggle');
+const Header = document.getElementById('header');
+const checkboxed = document.getElementById('checkboxed');
+const addClassfromHeader = window.matchMedia("(max-width: 715px)");
+
+function kakjeyaustal() {
+    if (addClassfromHeader.matches) {
+        Header.classList.add('ne-checked');
+    } else {
+        Header.classList.remove('ne-checked');
+    }
+}
+kakjeyaustal();
+addClassfromHeader.addEventListener('change', kakjeyaustal);
+
+fullScrean.addEventListener("change", function() {
+    if (fullScrean.checked) {
+        Header.classList.add('ne-checked');
+    } else {
+        Header.classList.remove('ne-checked');
+    }
+});
+        
+
+    </script>
+    <footer>
+        <div class="reglament">
+            <p>
+                © 2023 Lebedkov. Все права защищены.НДС включён во все цены, где он применим.
+            </p>
+        </div>
+        <div class="contact">
+            <span class="contacts">
+              Phone: +79962209041
+              <div class="real-contact">
+                Это реальный мой номер телефона
+              </div>
+            </span>
+            <span class="contacts">
+              Email: lebedkov200002@gmail.com
+              <div class="real-contact">
+                Это реальная моя электронная почта
+              </div>
+            </span>
+  
+        </div>
+      </footer>
+</body>
+</html>

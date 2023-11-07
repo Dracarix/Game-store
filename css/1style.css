@@ -1802,3 +1802,113 @@ footer .contact{
   overflow: hidden;
 }
 /* cart end */
+/* login and reg forms start*/
+.login-main{
+  background: url('../images/background_login.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 760px;
+  position: relative;
+  left: 50%;
+
+  transform: translate(-50%);
+}
+.log-page{
+  position: relative;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  max-width: 600px;
+}
+
+
+.log-page h3{
+  font-size: 28px ;
+  font-weight: 800;
+  margin-left: 24px;
+  user-select: none;
+  color: #Fff;
+  filter: drop-shadow(0px 0px 2px rgb(25, 0, 255));
+}
+#login{
+  background: #171A21;
+  display: grid;
+  flex: 1;
+  padding: 24px;
+  border-radius: 2px;
+
+}
+#login input{
+  border: 1px solid #32353c;
+  background-color: #32353c;
+  outline: none;
+  color: #fff;
+  padding: 10px ;
+  margin-top: 2px;
+}
+#login p{
+  margin: 0;
+  color: #afafaf;
+  font-size: 12px;
+  user-select: none;
+}
+#login span{
+  margin: 0;
+  color: #1999ff;
+  font-weight: 500;
+  font-size: 12px;
+  user-select: none;
+}
+#pass-input{
+  font-size: 16px;
+  
+}
+.log-pass{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#label-pass{
+  width: 30px;
+  position: absolute;
+  right: 5px;
+  filter: drop-shadow(0 0 5px #fff);
+  top: 8px;
+  background-image: url('../images/noeye.svg');
+  z-index: 10;
+}
+#label-pass img{
+  opacity: 0;
+}
+#pass-checkbox{
+  display: none;
+
+}
+#login button{
+  margin-top: 24px;
+  width: 150px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  height: 40px;
+  border-radius: 2%;
+  border: none;
+  color: #fff;
+  background: linear-gradient(90deg, #06c1ffe7 0%, #2d73ffea 100%);
+}
+#login button:hover{
+  background: linear-gradient(90deg, #06c1ff 0%, #2d73ff 100%);
+}
+#login a{
+  color: #b9b7b7;
+  display: inline-block;
+  margin-top: 40px;
+  text-align: end;
+  font-size: 12px;
+  transition: all 0.2s;
+}
+#login a:hover{
+  color: #cecbcb;
+}
+/* login and reg forms end*/

@@ -604,6 +604,10 @@ footer{
     #media-carousel .splide__slide{
         height: 350px;
     }
+    #login{
+        background-color: #00000000;
+    }
+
 }
 @media (max-width: 480px){
 
