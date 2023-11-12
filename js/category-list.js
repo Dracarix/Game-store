@@ -195,10 +195,8 @@ removeEventListeners();
 }
 }
 
-// Вызовите функцию checkWindowWidth, чтобы установить обработчики событий
 checkWindowWidth();
 
-// Добавьте обработчик события изменения размера окна
 window.addEventListener('resize', checkWindowWidth);
 
 

@@ -610,7 +610,16 @@ footer{
 
 }
 @media (max-width: 480px){
-
+    .news-elem{
+        flex-direction: column;
+        display: inline-block;
+        margin-bottom: 32px;
+        height: auto;
+        
+    }
+    .date-elem{
+        margin-left: 8px;
+    }
     .path_game{
         display: none;
     }

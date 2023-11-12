@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вход</title>
+    <title>Регистрация</title>
     <link rel="stylesheet" href="css/1style.css">
     <link rel="stylesheet" href="css/media.css">
     <style>
         body{
-            background-color: #212429;
+            background: #212429;
         }
     </style>
 </head>
@@ -30,7 +30,7 @@
         <ul>
             <li><a href="index.html">Магазин</a></li>
             <li><a href="news-for-games/news.html">Новости</a></li>
-            <li><a href="">Войти / Зарегистрироваться </a></li>
+            <li><a href="login.html">Войти / Зарегистрироваться </a></li>
         </ul>
     
         
@@ -66,29 +66,75 @@
 </div>
 
 </div>
-
-    <div class="login-main">
-        <div class="log-page">
-            <h3>Войти</h3>
-            <form action="" id="login">
-                <span>ВВЕДИТЕ EMAIL</span>
-                <input type="text" name="" id="login-input" required maxlength="255">
+    <main class="register">
+        <div class="reg-section">
+            <h3>СОЗДАНИЕ АККАУНТА</h3>
+            <form action="" id="register">
+                <span>Адрес эл. почты</span>
+                <input type="text" name="reg-email" id="reg-email" maxlength="255" required>
                 <br>
-                <p>ПАРОЛЬ</p>
-                <div class="log-pass">
-                    <input type="password" id="pass-input" required minlength="8" maxlength="32"> 
+                <br>
+                <span>Пароль</span>
+                <div class="reg-pass">
+                    <input type="password" id="pass-input" minlength="8" maxlength="32" required>
                     <label for="pass-checkbox" id="label-pass"><img src="images/noeye.svg" alt=""></label>
                     <input type="checkbox" id="pass-checkbox">
                 </div>
-                
-                <button type="submit" >Войти</button>
+                <br>
+                <span>Подтвердите пароль</span>
+                <input type="password" name="confirm-pass" id="confirm-pass" required>
+                <br>
+                <div class="ssa-box">
+                    <input type="checkbox" id="check-info" required>
+                    <label for="check-info" id="label-check-info">asdasdads</label>
 
-                <a href="">У вас еще нет аккаунта?</a>
+                </div>
+                
+                <button type="submit" id="sabmReg">Продолжить</button>
+
+                <a href=""></a>
             </form>
         </div>
-        
-    </div>
+
+    </main>
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('register');
+            const submitButton = document.getElementById('sabmReg');
+            const passwordField = document.getElementById('pass-input');
+            const passwordConfirmField = document.getElementById('confirm-pass');
+
+            form.addEventListener('submit', function(event) {
+                if (!isFormValid()) {
+                    event.preventDefault(); // Остановить отправку формы, если данные не корректны
+                }
+            });
+
+            function isFormValid() {
+                const emailReg = document.getElementById('reg-email').value;
+                const password = passwordField.value;
+                const passwordConfirm = passwordConfirmField.value;
+
+                if (emailReg.length <= 2) {
+                    alert('Поле "Адрес эл. почты" обязательно для заполнения');
+                    return false;
+                }
+
+                if (password.length === 0) {
+                    alert('Поле "Пароль" обязательно для заполнения');
+                    return false;
+                }
+
+                if (password !== passwordConfirm) {
+                    alert('Пароль и подтверждение пароля не совпадают');
+                    return false;
+                }
+
+                return true; // Если все условия выполняются, форма считается валидной
+            }
+        });
+
+
         const pass = document.getElementById('pass-input');
         const labelCheckPass = document.getElementById('label-pass');
         labelCheckPass.addEventListener('click', ()=>{

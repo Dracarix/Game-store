@@ -64,17 +64,15 @@ window.addEventListener('load', () => {
 });
     
 
-// открытие таба по кнопкам
 function openTab(tabId) {
     // Скрыть все вкладки
     const tabs = document.querySelectorAll('.tab-content');
     tabs.forEach(function(tab) {
         tab.style.display = 'none';
     });
-    // Отобразить выбранную вкладку
+
     document.getElementById(tabId).style.display = 'block';  
 };
-//активные кнопки таба
 const btnTab = document.querySelectorAll('.tab-button');
 btnTab.forEach(function(elem){
     elem.addEventListener('click',()=>{
@@ -93,12 +91,11 @@ btnTab.forEach(function(elem){
 
 
 function openTabmedia(tabId) {
-    // Скрыть все вкладки
     const tabsMedia = document.querySelectorAll('.tab-content-media');
     tabsMedia.forEach(function(tab) {
         tab.style.display = 'none';
     });
-    // Отобразить выбранную вкладку
+
     document.getElementById(tabId).style.display = 'block';  
 };
 const btnTabmedia = document.querySelectorAll('.tab-button-media');
@@ -146,7 +143,7 @@ function handleMediaLeftColumn(event) {
   }
 }
 
-mediaLeftColumn.addListener(handleMediaLeftColumn); 
+mediaLeftColumn.addEventListener('change', handleMediaLeftColumn); 
 
 handleMediaLeftColumn(mediaLeftColumn);
 
@@ -221,10 +218,10 @@ function checkWindowWidth() {
     }
 }
 
-// Вызовите функцию checkWindowWidth, чтобы установить обработчики событий
+
 checkWindowWidth();
 
-// Добавьте обработчик события изменения размера окна
+
 window.addEventListener('resize', checkWindowWidth);
 
 

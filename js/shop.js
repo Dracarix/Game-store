@@ -1,10 +1,10 @@
 function openTabmedia(tabId) {
-    // Скрыть все вкладки
+
     const tabsMedia = document.querySelectorAll('.tab-content-media');
     tabsMedia.forEach(function(tab) {
         tab.style.display = 'none';
     });
-    // Отобразить выбранную вкладку
+
     document.getElementById(tabId).style.display = 'block';  
 };
 const btnTabmedia = document.querySelectorAll('.tab-button-media');
@@ -98,10 +98,9 @@ removeEventListeners();
 }
 }
 
-// Вызовите функцию checkWindowWidth, чтобы установить обработчики событий
+
 checkWindowWidth();
 
-// Добавьте обработчик события изменения размера окна
 window.addEventListener('resize', checkWindowWidth);
 
 
