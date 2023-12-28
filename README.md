@@ -1,4 +1,4 @@
-# Game-store https://dracarix.github.io/Game-store/
+[Game-store](https://dracarix.github.io/Game-store/)
 
 Game store with almost full functionality, no backend, no database, almost all links on the pages are working
 used in the project:
